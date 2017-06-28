@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LEM_IN"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LEM_IN">
+				<Option output="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/LEM_IN" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 LEM_IN"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LEM_IN/fast">
+				<Option output="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/LEM_IN" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 LEM_IN/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_bzero.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strcat.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strchr.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strjoin.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strlen.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strncpy.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strnew.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.h">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/main.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <ctype.h>//dell me
-#include "get_next_line.h"
+#include "filler.h"
 /*
 #comment
  a
@@ -26,7 +26,6 @@ typedef struct          s_lemin
     int                 n_ants;
     int                 start_id;
     int                 end_id;
-    int                 id;
 }                       t_lemin;
 
 typedef struct          s_rooms
@@ -46,9 +45,9 @@ void ft_error(void)
 
 void skip()
 {
-    char    *del;
+    char    **del;
 
-    get_next_line(1,del);
+    get_next_line(1,&del);
     free(del);
 }
 int is_comment(char *str)
@@ -81,11 +80,88 @@ int is_command(char *str)
     return 0;
 }
 
+t_rooms         *ft_rlist_create(char *str, t_lemin *lem, int com)
+{
+    t_rooms     *rooms;
+    char        **arr ;
+
+    arr = ft_strsplit(str, ' ');
+
+    rooms = (t_rooms*)malloc(sizeof(t_rooms));
+    rooms->id = 0;
+    rooms->r_name = arr[0];
+    rooms->x = atoi(arr[1]);
+    rooms->y = atoi(arr[2]);
+    rooms->next = NULL;
+    if (com == 1 || com == 2)
+        (com == 1 ) ? (lem->start_id = 0) : (lem->end_id = 0);
+    return (rooms);
+}
+
+void            ft_rlist_add(t_rooms *rooms, char *str, t_lemin *lem, int com)
+{
+    t_rooms     *temp;
+    t_rooms     *list;
+    char        **arr;
+    int         id;
+
+    id = 0;
+    if (com == 1 || com == 2)
+        get_next_line(0, &str);
+    arr = ft_strsplit(str, ' ');
+    temp = rooms;
+    while (temp->next)//there was Segfault
+    {
+        temp = temp->next;
+        id++;
+    }
+    list = (t_rooms *)malloc(sizeof(t_rooms));
+    temp->next = list;
+    list->r_name = arr[0];
+    list->x = atoi(arr[1]);
+    list->y = atoi(arr[2]);
+    list->id = id;
+    if (com == 1 || com == 2)
+        (com == 1 ) ? (lem->start_id = id) : (lem->end_id = id);
+
+
+}
+
+void print_list(t_lemin *a, t_rooms *b)
+{
+    printf("\n--------------------------------------\n");
+    printf("start id:%d\n",a->start_id);
+    printf("end id:%d\n",a->end_id);
+    printf("ants num:%d",a->n_ants);
+    printf("\n-----------------ROOMS----------------\n");
+
+    t_rooms *temp;
+
+    temp = b;
+    printf("Room name:%s\n",temp->r_name);
+    printf("id:%d\n",temp->id);
+    printf("x[%d]y[%d]\n",temp->x, temp->y);
+    while (temp->next)
+    {
+        temp = temp->next;
+        printf("\n====\n");
+        printf("Room name:%s\n",temp->r_name);
+        printf("id:%d\n",temp->id);
+        printf("x[%d]y[%d]\n",temp->x, temp->y);
+    }
+
+}
+
+int valid_room(char *str)
+{
+    return 1;
+}
+
 int main()
 {
     char        *str;
     t_lemin     *a;
-    t_rooms     *r;
+    t_rooms     *rooms = NULL;
     int         id = 0;
 
     a = malloc(sizeof(t_lemin));
@@ -94,11 +170,35 @@ int main()
         if (!is_comment(str))
             ft_error();
     a->n_ants = atoi(str);
-    printf("ants num:%s\n", str);
+  //  fd = open("test",O_RDONLY);
+  //  printf("ants num:%s\n", str);
     //ANT DONE
     //DO ROOMS
-    while (get_next_line(0,&str) && (is_room(str) || is_comment(str) || is_command(str)))
-
+    while (get_next_line(0,&str))
+    {
+        if (is_comment(str))
+            skip();
+        else if (is_command(str))
+        {
+            if (!rooms)
+                rooms = ft_rlist_create(str, a, is_command(str));
+            else
+                ft_rlist_add(rooms, str, a, is_command(str));
+        }
+        else
+        {
+            valid_room(str);
+            if (!rooms)
+                rooms = ft_rlist_create(str, a, is_command(str));
+            else {
+                if (strstr(str, "finish"))
+                    break ;
+                ft_rlist_add(rooms, str, a, is_command(str));
+            }
+        }
+        //print_list(a,rooms);
+    }
+    print_list(a,rooms);
 
 
 //    while (get_next_line(0, &str) && (is_comment(str) || is_command(str)))

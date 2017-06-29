@@ -150,6 +150,60 @@ ft_bzero.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_bzero.c.s
 .PHONY : ft_bzero.c.s
 
+ft_counts.o: ft_counts.c.o
+
+.PHONY : ft_counts.o
+
+# target to build an object file
+ft_counts.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_counts.c.o
+.PHONY : ft_counts.c.o
+
+ft_counts.i: ft_counts.c.i
+
+.PHONY : ft_counts.i
+
+# target to preprocess a source file
+ft_counts.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_counts.c.i
+.PHONY : ft_counts.c.i
+
+ft_counts.s: ft_counts.c.s
+
+.PHONY : ft_counts.s
+
+# target to generate assembly for a file
+ft_counts.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_counts.c.s
+.PHONY : ft_counts.c.s
+
+ft_countw.o: ft_countw.c.o
+
+.PHONY : ft_countw.o
+
+# target to build an object file
+ft_countw.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_countw.c.o
+.PHONY : ft_countw.c.o
+
+ft_countw.i: ft_countw.c.i
+
+.PHONY : ft_countw.i
+
+# target to preprocess a source file
+ft_countw.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_countw.c.i
+.PHONY : ft_countw.c.i
+
+ft_countw.s: ft_countw.c.s
+
+.PHONY : ft_countw.s
+
+# target to generate assembly for a file
+ft_countw.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_countw.c.s
+.PHONY : ft_countw.c.s
+
 ft_strcat.o: ft_strcat.c.o
 
 .PHONY : ft_strcat.o
@@ -312,6 +366,33 @@ ft_strnew.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strnew.c.s
 .PHONY : ft_strnew.c.s
 
+ft_strsplit.o: ft_strsplit.c.o
+
+.PHONY : ft_strsplit.o
+
+# target to build an object file
+ft_strsplit.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strsplit.c.o
+.PHONY : ft_strsplit.c.o
+
+ft_strsplit.i: ft_strsplit.c.i
+
+.PHONY : ft_strsplit.i
+
+# target to preprocess a source file
+ft_strsplit.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strsplit.c.i
+.PHONY : ft_strsplit.c.i
+
+ft_strsplit.s: ft_strsplit.c.s
+
+.PHONY : ft_strsplit.s
+
+# target to generate assembly for a file
+ft_strsplit.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strsplit.c.s
+.PHONY : ft_strsplit.c.s
+
 get_next_line.o: get_next_line.c.o
 
 .PHONY : get_next_line.o
@@ -378,6 +459,12 @@ help:
 	@echo "... ft_bzero.o"
 	@echo "... ft_bzero.i"
 	@echo "... ft_bzero.s"
+	@echo "... ft_counts.o"
+	@echo "... ft_counts.i"
+	@echo "... ft_counts.s"
+	@echo "... ft_countw.o"
+	@echo "... ft_countw.i"
+	@echo "... ft_countw.s"
 	@echo "... ft_strcat.o"
 	@echo "... ft_strcat.i"
 	@echo "... ft_strcat.s"
@@ -396,6 +483,9 @@ help:
 	@echo "... ft_strnew.o"
 	@echo "... ft_strnew.i"
 	@echo "... ft_strnew.s"
+	@echo "... ft_strsplit.o"
+	@echo "... ft_strsplit.i"
+	@echo "... ft_strsplit.s"
 	@echo "... get_next_line.o"
 	@echo "... get_next_line.i"
 	@echo "... get_next_line.s"

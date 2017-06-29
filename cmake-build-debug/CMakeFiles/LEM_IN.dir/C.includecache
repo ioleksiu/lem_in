@@ -26,6 +26,14 @@ unistd.h
 string.h
 -
 
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_counts.c
+filler.h
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
+
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_countw.c
+filler.h
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
+
 /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strcat.c
 
 /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strchr.c
@@ -48,23 +56,13 @@ filler.h
 filler.h
 /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
 
-/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.c
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strsplit.c
 filler.h
 /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
 
-/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.h
-stdlib.h
--
-fcntl.h
--
-sys/stat.h
--
-sys/types.h
--
-sys/uio.h
--
-stdio.h
--
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.c
+filler.h
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
 
 /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/main.c
 stdio.h
@@ -77,6 +75,6 @@ stdlib.h
 -
 ctype.h
 -
-get_next_line.h
-/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.h
+filler.h
+/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
 

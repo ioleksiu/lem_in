@@ -3,6 +3,12 @@
 
 CMakeFiles/LEM_IN.dir/ft_bzero.c.o: ../ft_bzero.c
 
+CMakeFiles/LEM_IN.dir/ft_counts.c.o: ../filler.h
+CMakeFiles/LEM_IN.dir/ft_counts.c.o: ../ft_counts.c
+
+CMakeFiles/LEM_IN.dir/ft_countw.c.o: ../filler.h
+CMakeFiles/LEM_IN.dir/ft_countw.c.o: ../ft_countw.c
+
 CMakeFiles/LEM_IN.dir/ft_strcat.c.o: ../ft_strcat.c
 
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o: ../ft_strchr.c
@@ -18,9 +24,12 @@ CMakeFiles/LEM_IN.dir/ft_strncpy.c.o: ../ft_strncpy.c
 CMakeFiles/LEM_IN.dir/ft_strnew.c.o: ../filler.h
 CMakeFiles/LEM_IN.dir/ft_strnew.c.o: ../ft_strnew.c
 
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o: ../filler.h
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o: ../ft_strsplit.c
+
 CMakeFiles/LEM_IN.dir/get_next_line.c.o: ../filler.h
 CMakeFiles/LEM_IN.dir/get_next_line.c.o: ../get_next_line.c
 
-CMakeFiles/LEM_IN.dir/main.c.o: ../get_next_line.h
+CMakeFiles/LEM_IN.dir/main.c.o: ../filler.h
 CMakeFiles/LEM_IN.dir/main.c.o: ../main.c
 

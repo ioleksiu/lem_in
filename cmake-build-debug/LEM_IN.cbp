@@ -88,6 +88,12 @@
 		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_bzero.c">
 			<Option target="LEM_IN"/>
 		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_counts.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_countw.c">
+			<Option target="LEM_IN"/>
+		</Unit>
 		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strcat.c">
 			<Option target="LEM_IN"/>
 		</Unit>
@@ -104,6 +110,9 @@
 			<Option target="LEM_IN"/>
 		</Unit>
 		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strnew.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strsplit.c">
 			<Option target="LEM_IN"/>
 		</Unit>
 		<Unit filename="/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.c">

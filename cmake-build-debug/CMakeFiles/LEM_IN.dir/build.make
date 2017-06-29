@@ -273,6 +273,78 @@ CMakeFiles/LEM_IN.dir/ft_strcat.c.o.provides: CMakeFiles/LEM_IN.dir/ft_strcat.c.
 CMakeFiles/LEM_IN.dir/ft_strcat.c.o.provides.build: CMakeFiles/LEM_IN.dir/ft_strcat.c.o
 
 
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o: CMakeFiles/LEM_IN.dir/flags.make
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o: ../ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/LEM_IN.dir/ft_strsplit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LEM_IN.dir/ft_strsplit.c.o   -c /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strsplit.c
+
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LEM_IN.dir/ft_strsplit.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strsplit.c > CMakeFiles/LEM_IN.dir/ft_strsplit.c.i
+
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LEM_IN.dir/ft_strsplit.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strsplit.c -o CMakeFiles/LEM_IN.dir/ft_strsplit.c.s
+
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.requires:
+
+.PHONY : CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.requires
+
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.provides: CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.requires
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.provides.build
+.PHONY : CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.provides
+
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.provides.build: CMakeFiles/LEM_IN.dir/ft_strsplit.c.o
+
+
+CMakeFiles/LEM_IN.dir/ft_counts.c.o: CMakeFiles/LEM_IN.dir/flags.make
+CMakeFiles/LEM_IN.dir/ft_counts.c.o: ../ft_counts.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/LEM_IN.dir/ft_counts.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LEM_IN.dir/ft_counts.c.o   -c /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_counts.c
+
+CMakeFiles/LEM_IN.dir/ft_counts.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LEM_IN.dir/ft_counts.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_counts.c > CMakeFiles/LEM_IN.dir/ft_counts.c.i
+
+CMakeFiles/LEM_IN.dir/ft_counts.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LEM_IN.dir/ft_counts.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_counts.c -o CMakeFiles/LEM_IN.dir/ft_counts.c.s
+
+CMakeFiles/LEM_IN.dir/ft_counts.c.o.requires:
+
+.PHONY : CMakeFiles/LEM_IN.dir/ft_counts.c.o.requires
+
+CMakeFiles/LEM_IN.dir/ft_counts.c.o.provides: CMakeFiles/LEM_IN.dir/ft_counts.c.o.requires
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_counts.c.o.provides.build
+.PHONY : CMakeFiles/LEM_IN.dir/ft_counts.c.o.provides
+
+CMakeFiles/LEM_IN.dir/ft_counts.c.o.provides.build: CMakeFiles/LEM_IN.dir/ft_counts.c.o
+
+
+CMakeFiles/LEM_IN.dir/ft_countw.c.o: CMakeFiles/LEM_IN.dir/flags.make
+CMakeFiles/LEM_IN.dir/ft_countw.c.o: ../ft_countw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/LEM_IN.dir/ft_countw.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/LEM_IN.dir/ft_countw.c.o   -c /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_countw.c
+
+CMakeFiles/LEM_IN.dir/ft_countw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LEM_IN.dir/ft_countw.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_countw.c > CMakeFiles/LEM_IN.dir/ft_countw.c.i
+
+CMakeFiles/LEM_IN.dir/ft_countw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LEM_IN.dir/ft_countw.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_countw.c -o CMakeFiles/LEM_IN.dir/ft_countw.c.s
+
+CMakeFiles/LEM_IN.dir/ft_countw.c.o.requires:
+
+.PHONY : CMakeFiles/LEM_IN.dir/ft_countw.c.o.requires
+
+CMakeFiles/LEM_IN.dir/ft_countw.c.o.provides: CMakeFiles/LEM_IN.dir/ft_countw.c.o.requires
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_countw.c.o.provides.build
+.PHONY : CMakeFiles/LEM_IN.dir/ft_countw.c.o.provides
+
+CMakeFiles/LEM_IN.dir/ft_countw.c.o.provides.build: CMakeFiles/LEM_IN.dir/ft_countw.c.o
+
+
 # Object files for target LEM_IN
 LEM_IN_OBJECTS = \
 "CMakeFiles/LEM_IN.dir/main.c.o" \
@@ -283,7 +355,10 @@ LEM_IN_OBJECTS = \
 "CMakeFiles/LEM_IN.dir/ft_strncpy.c.o" \
 "CMakeFiles/LEM_IN.dir/ft_strnew.c.o" \
 "CMakeFiles/LEM_IN.dir/ft_strlen.c.o" \
-"CMakeFiles/LEM_IN.dir/ft_strcat.c.o"
+"CMakeFiles/LEM_IN.dir/ft_strcat.c.o" \
+"CMakeFiles/LEM_IN.dir/ft_strsplit.c.o" \
+"CMakeFiles/LEM_IN.dir/ft_counts.c.o" \
+"CMakeFiles/LEM_IN.dir/ft_countw.c.o"
 
 # External object files for target LEM_IN
 LEM_IN_EXTERNAL_OBJECTS =
@@ -297,9 +372,12 @@ LEM_IN: CMakeFiles/LEM_IN.dir/ft_strncpy.c.o
 LEM_IN: CMakeFiles/LEM_IN.dir/ft_strnew.c.o
 LEM_IN: CMakeFiles/LEM_IN.dir/ft_strlen.c.o
 LEM_IN: CMakeFiles/LEM_IN.dir/ft_strcat.c.o
+LEM_IN: CMakeFiles/LEM_IN.dir/ft_strsplit.c.o
+LEM_IN: CMakeFiles/LEM_IN.dir/ft_counts.c.o
+LEM_IN: CMakeFiles/LEM_IN.dir/ft_countw.c.o
 LEM_IN: CMakeFiles/LEM_IN.dir/build.make
 LEM_IN: CMakeFiles/LEM_IN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable LEM_IN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable LEM_IN"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LEM_IN.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -316,6 +394,9 @@ CMakeFiles/LEM_IN.dir/requires: CMakeFiles/LEM_IN.dir/ft_strncpy.c.o.requires
 CMakeFiles/LEM_IN.dir/requires: CMakeFiles/LEM_IN.dir/ft_strnew.c.o.requires
 CMakeFiles/LEM_IN.dir/requires: CMakeFiles/LEM_IN.dir/ft_strlen.c.o.requires
 CMakeFiles/LEM_IN.dir/requires: CMakeFiles/LEM_IN.dir/ft_strcat.c.o.requires
+CMakeFiles/LEM_IN.dir/requires: CMakeFiles/LEM_IN.dir/ft_strsplit.c.o.requires
+CMakeFiles/LEM_IN.dir/requires: CMakeFiles/LEM_IN.dir/ft_counts.c.o.requires
+CMakeFiles/LEM_IN.dir/requires: CMakeFiles/LEM_IN.dir/ft_countw.c.o.requires
 
 .PHONY : CMakeFiles/LEM_IN.dir/requires
 

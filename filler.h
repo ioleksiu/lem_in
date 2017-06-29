@@ -37,4 +37,8 @@ char				*ft_strncpy(char *dest, const char *sorc, size_t len);
 char				*ft_strnew(size_t size);
 char				*ft_strcat(char *s1, const char *s2);
 size_t				ft_strlen(const char *s);
+char				**ft_strsplit(char const *s, char c);
+int	                ft_countw(const char *s, char sp);
+int                 ft_counts(const char *s, char sp);
+
 #endif

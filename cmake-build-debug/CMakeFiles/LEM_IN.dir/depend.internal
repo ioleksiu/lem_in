@@ -3,6 +3,12 @@
 
 CMakeFiles/LEM_IN.dir/ft_bzero.c.o
  /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_bzero.c
+CMakeFiles/LEM_IN.dir/ft_counts.c.o
+ /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
+ /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_counts.c
+CMakeFiles/LEM_IN.dir/ft_countw.c.o
+ /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
+ /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_countw.c
 CMakeFiles/LEM_IN.dir/ft_strcat.c.o
  /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strcat.c
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o
@@ -18,9 +24,12 @@ CMakeFiles/LEM_IN.dir/ft_strncpy.c.o
 CMakeFiles/LEM_IN.dir/ft_strnew.c.o
  /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
  /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strnew.c
+CMakeFiles/LEM_IN.dir/ft_strsplit.c.o
+ /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
+ /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/ft_strsplit.c
 CMakeFiles/LEM_IN.dir/get_next_line.c.o
  /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
  /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.c
 CMakeFiles/LEM_IN.dir/main.c.o
- /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/get_next_line.h
+ /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/filler.h
  /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/main.c

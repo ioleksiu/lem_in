@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN
+CMAKE_SOURCE_DIR = /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug
+CMAKE_BINARY_DIR = /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/i/ioleksiu/ClionProjects/LEM_IN/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ LEM_IN: cmake_check_build_system
 LEM_IN/fast:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/build
 .PHONY : LEM_IN/fast
+
+error.o: error.c.o
+
+.PHONY : error.o
+
+# target to build an object file
+error.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/error.c.o
+.PHONY : error.c.o
+
+error.i: error.c.i
+
+.PHONY : error.i
+
+# target to preprocess a source file
+error.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/error.c.i
+.PHONY : error.c.i
+
+error.s: error.c.s
+
+.PHONY : error.s
+
+# target to generate assembly for a file
+error.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/error.c.s
+.PHONY : error.c.s
 
 ft_bzero.o: ft_bzero.c.o
 
@@ -258,6 +285,33 @@ ft_strchr.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strchr.c.s
 .PHONY : ft_strchr.c.s
 
+ft_strequ.o: ft_strequ.c.o
+
+.PHONY : ft_strequ.o
+
+# target to build an object file
+ft_strequ.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strequ.c.o
+.PHONY : ft_strequ.c.o
+
+ft_strequ.i: ft_strequ.c.i
+
+.PHONY : ft_strequ.i
+
+# target to preprocess a source file
+ft_strequ.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strequ.c.i
+.PHONY : ft_strequ.c.i
+
+ft_strequ.s: ft_strequ.c.s
+
+.PHONY : ft_strequ.s
+
+# target to generate assembly for a file
+ft_strequ.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strequ.c.s
+.PHONY : ft_strequ.c.s
+
 ft_strjoin.o: ft_strjoin.c.o
 
 .PHONY : ft_strjoin.o
@@ -338,6 +392,33 @@ ft_strncpy.s: ft_strncpy.c.s
 ft_strncpy.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strncpy.c.s
 .PHONY : ft_strncpy.c.s
+
+ft_strnequ.o: ft_strnequ.c.o
+
+.PHONY : ft_strnequ.o
+
+# target to build an object file
+ft_strnequ.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strnequ.c.o
+.PHONY : ft_strnequ.c.o
+
+ft_strnequ.i: ft_strnequ.c.i
+
+.PHONY : ft_strnequ.i
+
+# target to preprocess a source file
+ft_strnequ.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strnequ.c.i
+.PHONY : ft_strnequ.c.i
+
+ft_strnequ.s: ft_strnequ.c.s
+
+.PHONY : ft_strnequ.s
+
+# target to generate assembly for a file
+ft_strnequ.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strnequ.c.s
+.PHONY : ft_strnequ.c.s
 
 ft_strnew.o: ft_strnew.c.o
 
@@ -420,6 +501,33 @@ get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/get_next_line.c.s
 .PHONY : get_next_line.c.s
 
+list.o: list.c.o
+
+.PHONY : list.o
+
+# target to build an object file
+list.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/list.c.o
+.PHONY : list.c.o
+
+list.i: list.c.i
+
+.PHONY : list.i
+
+# target to preprocess a source file
+list.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/list.c.i
+.PHONY : list.c.i
+
+list.s: list.c.s
+
+.PHONY : list.s
+
+# target to generate assembly for a file
+list.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/list.c.s
+.PHONY : list.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -447,6 +555,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/main.c.s
 .PHONY : main.c.s
 
+print.o: print.c.o
+
+.PHONY : print.o
+
+# target to build an object file
+print.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print.c.o
+.PHONY : print.c.o
+
+print.i: print.c.i
+
+.PHONY : print.i
+
+# target to preprocess a source file
+print.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print.c.i
+.PHONY : print.c.i
+
+print.s: print.c.s
+
+.PHONY : print.s
+
+# target to generate assembly for a file
+print.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print.c.s
+.PHONY : print.c.s
+
+skip.o: skip.c.o
+
+.PHONY : skip.o
+
+# target to build an object file
+skip.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/skip.c.o
+.PHONY : skip.c.o
+
+skip.i: skip.c.i
+
+.PHONY : skip.i
+
+# target to preprocess a source file
+skip.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/skip.c.i
+.PHONY : skip.c.i
+
+skip.s: skip.c.s
+
+.PHONY : skip.s
+
+# target to generate assembly for a file
+skip.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/skip.c.s
+.PHONY : skip.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -456,6 +618,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LEM_IN"
+	@echo "... error.o"
+	@echo "... error.i"
+	@echo "... error.s"
 	@echo "... ft_bzero.o"
 	@echo "... ft_bzero.i"
 	@echo "... ft_bzero.s"
@@ -471,6 +636,9 @@ help:
 	@echo "... ft_strchr.o"
 	@echo "... ft_strchr.i"
 	@echo "... ft_strchr.s"
+	@echo "... ft_strequ.o"
+	@echo "... ft_strequ.i"
+	@echo "... ft_strequ.s"
 	@echo "... ft_strjoin.o"
 	@echo "... ft_strjoin.i"
 	@echo "... ft_strjoin.s"
@@ -480,6 +648,9 @@ help:
 	@echo "... ft_strncpy.o"
 	@echo "... ft_strncpy.i"
 	@echo "... ft_strncpy.s"
+	@echo "... ft_strnequ.o"
+	@echo "... ft_strnequ.i"
+	@echo "... ft_strnequ.s"
 	@echo "... ft_strnew.o"
 	@echo "... ft_strnew.i"
 	@echo "... ft_strnew.s"
@@ -489,9 +660,18 @@ help:
 	@echo "... get_next_line.o"
 	@echo "... get_next_line.i"
 	@echo "... get_next_line.s"
+	@echo "... list.o"
+	@echo "... list.i"
+	@echo "... list.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print.o"
+	@echo "... print.i"
+	@echo "... print.s"
+	@echo "... skip.o"
+	@echo "... skip.i"
+	@echo "... skip.s"
 .PHONY : help
 
 

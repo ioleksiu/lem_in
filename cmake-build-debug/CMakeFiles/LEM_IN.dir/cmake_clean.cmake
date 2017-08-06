@@ -11,6 +11,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/LEM_IN.dir/ft_strsplit.c.o"
   "CMakeFiles/LEM_IN.dir/ft_counts.c.o"
   "CMakeFiles/LEM_IN.dir/ft_countw.c.o"
+  "CMakeFiles/LEM_IN.dir/error.c.o"
+  "CMakeFiles/LEM_IN.dir/skip.c.o"
+  "CMakeFiles/LEM_IN.dir/list.c.o"
+  "CMakeFiles/LEM_IN.dir/print.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_strequ.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_strnequ.c.o"
   "LEM_IN.pdb"
   "LEM_IN"
 )

@@ -28,7 +28,14 @@ typedef struct		s_get
     struct s_get	*next;
 }					t_get;
 
+//typedef struct      s_ways
+//{
+//    int             *way;
+//    struct t_ways   *next;
+//}                   t_all_ways;
+
 typedef struct          s_lemin
+
 {
     int                 n_ants;
     int                 start_id;
@@ -42,7 +49,8 @@ typedef struct          s_lemin
     int                 is_end;
     int                 command;
     int                 *link_num;
-    int                 start_dfs;
+    int                 jope;
+//    int                 start_dfs;
     int                 *queue;// n * n
     int                 *visited;//n
     //

@@ -140,7 +140,8 @@ t_lemin    *struct_init()
     a->is_link = 0;
     a->command = 0;
     a->link_num = NULL;
-    a->start_dfs = 1;
+    a->jope = 0;
+//    a->start_dfs = 1;
     return (a);
 }
 
@@ -556,11 +557,26 @@ void        del_last_visited(t_lemin *lem)
 {
     int     i;
 
-    i = lem->room_num - 1;
-    while (lem->visited[i] == -1)
-        i--;
-    if (i >= 0)
-        lem->visited[i] = -1;
+    i = 0;
+    if (lem->visited[lem->room_num - 1] != -1)
+    {
+        lem->visited[lem->room_num - 1] = -1;
+        return ;
+    }
+    while (i < lem->room_num - 1)
+    {
+        if (lem->visited[i + 1] == -1)
+        {
+            lem->visited[i] = -1;
+            return ;
+        }
+        i++;
+    }
+//    i = lem->room_num - 1;
+//    while (i >= 0 && lem->visited[i] == -1 )
+//        i--;
+//    if (i >= 0)
+//        lem->visited[i] = -1;
 }
 
 void        del_last_queue(t_lemin *lem)
@@ -585,6 +601,26 @@ void        add_visited(t_lemin *lem)
     lem->visited[i] = last_q(lem);
 }
 
+int         last_q_static(int *q)
+{
+    int     i;
+
+    i = -1;
+    while (q[++i] != -1)
+        ;
+    return (q[i - 1]);
+}
+
+void        add_visited_static(int *q, t_lemin *lem)
+{
+    int     i;
+
+    i = -1;
+    while (++i < lem->room_num)
+        if (lem->visited[i] == -1)
+            break ;
+    lem->visited[i] = last_q_static(q);
+}
 //////////////////////////////////////////////////////////////
 
 void        add_q(t_lemin *lem, int q, int v)
@@ -641,10 +677,10 @@ void        print_v(t_lemin *lem)
     int     i;
 
     i = 0;
-    printf("\n VISITED: ");
-    while (lem->visited[i] != -1)
+    printf("\n %d VISITED: ", lem->jope);
+    while (i < lem->room_num && lem->visited[i] != -1)
         printf("[%d]", lem->visited[i++]);
-    //printf("\n");
+    lem->jope++;
 }
 
 void        print_q(t_lemin *lem)
@@ -672,55 +708,109 @@ int        is_dead_end(t_lemin *lem, int q, int v)
     //only one way and it touches start
 }
 
-//////////////////////////////////////////////////////////
-void         dfs(t_lemin *lem)
+void        add_q_static(t_lemin *lem, int  *ochered)
 {
-    int i;
-    int ochered[lem->room_num];
+    int     v;
+    int     i;
+    int     count;
 
-    printf("\n\nWHERE AM I: %d\n", last_v(lem));
-    add_queue(lem);//add queue
-    print_q(lem);
+    v = last_v(lem);
+    i = -1;
+    count = -1;
+    while (++i < lem->room_num)
+        if (lem->matrix[v][i] == 1 /*&& !is_visited(lem, i)*/)
+            ochered[++count] = i;
+    while(count < lem->room_num)
+        ochered[++count] = -1;
+}
+
+void        print_q_static(int *ochered, t_lemin *lem)
+{
+    int     i;
+
+    i = -1;
+    printf("Q:");
+    while (++i < lem->room_num)
+        printf("[%d]", ochered[i]);
+    printf("\n");
+
+}
+
+//int         is_finish(int *q, t_lemin *lem)
+//{
+//    int     i;
+//
+//    i = -1;
+//    while (q[++i] != -1)
+//        ;
+//    if (q [i - 1] == lem->room_num - 1)
+//        return (1);
+//    return (0);
+//
+//}
+
+void        del_q_static(int *q, int size)
+{
+    int     i;
+
     i = 0;
-//    while (lem->queue[0] != -1)
-//    {
-//        if (is_end_in_queue(lem))
-//        {
-//            print_v(lem);
-//            printf("[%d]", lem->room_num - 1);
-//            del_last_queue(lem);
-//            print_q(lem);
-//          //  return;
-//        }
-//        if (!can_go(lem, last_q(lem), last_v(lem)))//cant go to Q from V
-//        {
-//            del_last_visited(lem);
-//           // return;
-//        }
-//        if (is_visited(lem, last_q(lem)))
-//        {
-//            //del_last_queue(lem);//i we was in Q
-//            if (is_end_in_queue(lem))
+    if (q[size - 1] != -1)
+    {
+        q[size - 1] = -1;
+        return ;
+    }
+    while (i < size - 1)
+    {
+        if (q[i + 1] == -1)
+        {
+            q[i] = -1;
+            return ;
+        }
+        i++;
+    }
+//    i = -1;
+//    while (q[++i] != -1)
+//        ;
+//    q[i - 1] = -1;
+}
+
+//////////////////////////////////////////////////////////
+void            dfs(t_lemin *lem)
+{
+    int         ochered[lem->room_num + 1];
+
+  //  printf("\n\nWHERE AM I: %d\n", last_v(lem));
+    if (last_v(lem) == lem->room_num - 1)
+    {
+        print_v(lem);
+      //  print_q_static(ochered, lem);
+        del_last_visited(lem);
+        del_q_static(ochered, lem->room_num);//del
+        return;
+    }
+    add_q_static(lem, ochered);//add queue
+  //  print_q_static(ochered, lem);
+   // print_v(lem);
+    while (ochered[0] != -1 && !(ochered[0] == 0 && ochered[1] == -1))
+    {
+            if (last_q_static(ochered) != -1 && !is_visited(lem, last_q_static(ochered)) )
+            {
+                add_visited_static(ochered, lem);//may be here
+              //  print_v(lem);
+                del_q_static(ochered, lem->room_num);
+                dfs(lem);
+            }
+//            if (ochered[0] == 0 && ochered[1] == -1)
 //            {
-//                del_last_queue(lem);
-//                dfs(lem);
-//            }
-//            del_last_queue(lem);
-//           // return;
-//        }
-//        if(can_go(lem, last_q(lem), last_v(lem)) && !is_visited(lem, last_q(lem)))
-//            add_visited(lem);
-//        else
-//        {
-//            del_last_visited(lem);
-//            del_last_queue(lem);
-//        }
-//        print_v(lem);
-//        dfs(lem);
-//    }
-//    print_v(lem);
-//    printf("\nDA\n");
-//    return;
+//                del_last_visited(lem);
+//                break ;
+            if (is_visited(lem, last_q_static(ochered)))
+                del_q_static(ochered, lem->room_num);
+           // print_q_static(ochered, lem);
+
+    }
+    del_last_visited(lem);
+    //dfs(lem);
 }
 
 ///////////////////////////////////////////////////////////
@@ -812,7 +902,7 @@ int main()
     rooms = NULL;
     lem = struct_init();
     ants_number(lem);
-    while (get_next_line(0,&str))
+    while (get_next_line(0, &str))
     {
         if (ft_strequ(str,"hui")) //DELL ME
             break;

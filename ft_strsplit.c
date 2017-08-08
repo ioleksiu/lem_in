@@ -32,7 +32,7 @@ static char		**alloc(char *s, char c)
 {
 	char	**dst;
 
-	if (!(dst = (char **)malloc(sizeof(char *) * ft_countw(s, c))))
+	if (!(dst = (char **)malloc(sizeof(char *) * ft_countw(s, c)))) // tyt huinia
 		return (0);
 	if (!(dst[0] = (char*)malloc(sizeof(char) * ft_counts(s, c))))
 		return (0);

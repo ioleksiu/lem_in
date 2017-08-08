@@ -140,7 +140,8 @@ t_lemin    *struct_init()
     a->is_link = 0;
     a->command = 0;
     a->link_num = NULL;
-    a->jope = 0;
+    a->ways = NULL;
+    //a->jope = 0;
 //    a->start_dfs = 1;
     return (a);
 }
@@ -328,7 +329,8 @@ t_lemin     *add_link(t_lemin *lem, t_rooms *rooms, char *str)
     lem->matrix[id[1]][id[0]] = 1;
     lem->link_num[id[0]]++;
     lem->link_num[id[1]]++;
-    print_matrix(lem);
+    free(link);
+    //print_matrix(lem);
     return (lem);
 }
 void            swap_rooms(t_rooms *a, t_rooms *b, int flag)
@@ -404,33 +406,6 @@ void            swap_start_end(t_rooms *rooms, t_lemin *lem)
     lem->end_id = lem->room_num - 1;
 }
 
-//void        add_dis(t_lemin *lem, int *dis, int room)
-//{
-//
-//}
-//void        calc_distance(t_lemin *lem)
-//{
-//    int     *distance;
-//    int     i;
-//
-//    i = -1;
-//    distance = malloc(lem->n_ants * sizeof(int));
-//    while (++i < lem->n_ants)
-//        distance[i] = 0;
-//    i = 0;
-//    while(1)
-//    {
-//        if (lem->link_num[i] >= 2 || ((i == 0 || i == lem->room_num - 1) && ( lem->link_num[i] == 1)))
-//
-//        break;
-//    }
-//}
-
-
-//void    del_rooms_with_one_link(t_lemin *lem)
-//{
-//
-//}
 void print_visited(t_lemin *lem, int *arr)
 {
     int i;
@@ -572,33 +547,6 @@ void        del_last_visited(t_lemin *lem)
         }
         i++;
     }
-//    i = lem->room_num - 1;
-//    while (i >= 0 && lem->visited[i] == -1 )
-//        i--;
-//    if (i >= 0)
-//        lem->visited[i] = -1;
-}
-
-void        del_last_queue(t_lemin *lem)
-{
-    int     i;
-
-    i = lem->room_num * lem->room_num -1;
-    while (lem->queue[i] == -1)
-        i--;
-    if (i >= 0)
-        lem->queue[i] = -1;
-}
-
-void        add_visited(t_lemin *lem)
-{
-    int     i;
-
-    i = 0;
-    //find right q
-    while (lem->visited[i] != -1)
-        i++;
-    lem->visited[i] = last_q(lem);
 }
 
 int         last_q_static(int *q)
@@ -621,29 +569,6 @@ void        add_visited_static(int *q, t_lemin *lem)
             break ;
     lem->visited[i] = last_q_static(q);
 }
-//////////////////////////////////////////////////////////////
-
-void        add_q(t_lemin *lem, int q, int v)
-{
-    int     i;
-
-    i = -1;
-    while (++i < lem->room_num)
-        if (lem->matrix[v][i] == 1)
-            lem->queue[q++] = i;
-}
-
-void        add_queue(t_lemin *lem)
-{
-    int     i;
-
-    i = 0;
-    while (lem->queue[i] != -1)
-        i++;
-    if (i > 0)
-        i--;
-    add_q(lem, i, last_v(lem));
-}
 
 int         can_go(t_lemin *lem, int q, int v)
 {
@@ -657,17 +582,6 @@ int         is_visited(t_lemin *lem, int q)
     i = -1;
     while (lem->visited[++i] != -1)
         if (lem->visited[i] == q)
-            return (1);
-    return (0);
-}
-
-int         is_end_in_queue(t_lemin *lem)
-{
-    int     i;
-
-    i = -1;
-    while (++i < lem->room_num)
-        if (lem->queue[i] == lem->room_num - 1)
             return (1);
     return (0);
 }
@@ -692,20 +606,6 @@ void        print_q(t_lemin *lem)
     while (lem->queue[i] != -1)
         printf("[%d]", lem->queue[i++]);
     //printf("\n");
-}
-
-int        is_dead_end(t_lemin *lem, int q, int v)
-{
-    int     i;
-
-    i = -1;
-    can_go(lem, last_q(lem), last_v(lem));
-    while (++i < lem->room_num - 1)
-        if (lem->matrix[q][i] == 1)
-            if (!is_visited(lem, i))
-                return (1);
-    return (0);
-    //only one way and it touches start
 }
 
 void        add_q_static(t_lemin *lem, int  *ochered)
@@ -736,19 +636,6 @@ void        print_q_static(int *ochered, t_lemin *lem)
 
 }
 
-//int         is_finish(int *q, t_lemin *lem)
-//{
-//    int     i;
-//
-//    i = -1;
-//    while (q[++i] != -1)
-//        ;
-//    if (q [i - 1] == lem->room_num - 1)
-//        return (1);
-//    return (0);
-//
-//}
-
 void        del_q_static(int *q, int size)
 {
     int     i;
@@ -774,6 +661,44 @@ void        del_q_static(int *q, int size)
 //    q[i - 1] = -1;
 }
 
+void            create_fist_way(t_lemin *lem)
+{
+    int         i;
+
+    lem->ways = (t_ways*)malloc(sizeof(t_ways));
+    lem->ways->way = (int*)malloc(sizeof(int) * lem->room_num);
+    lem->ways->next = NULL;
+    //may be cab be del
+    i = -1;
+    while (++i < lem->room_num)
+        lem->ways->way[i] = lem->visited[i];
+    //lem->ways->way[++i] = -1;
+}
+
+void            add_way(t_lemin *lem)
+{
+    t_ways     *tmp;
+    int         i;
+
+    tmp = lem->ways;
+    if (tmp == NULL)
+        create_fist_way(lem);
+    else
+    {
+        tmp = lem->ways;
+        while (tmp->next)
+            tmp = tmp->next;
+        tmp->next = (t_ways *) malloc(sizeof(t_ways));
+        tmp->next->way = (int *) malloc(sizeof(int) * lem->room_num);
+        tmp->next->next = NULL;
+        i = -1;
+        while (i < lem->room_num)
+            tmp->next->way[i] = lem->visited[++i];
+       // tmp->next->way[i] = -1;
+    }
+    //may be cab be del
+
+}
 //////////////////////////////////////////////////////////
 void            dfs(t_lemin *lem)
 {
@@ -783,6 +708,7 @@ void            dfs(t_lemin *lem)
     if (last_v(lem) == lem->room_num - 1)
     {
         print_v(lem);
+        add_way(lem);
       //  print_q_static(ochered, lem);
         del_last_visited(lem);
         del_q_static(ochered, lem->room_num);//del
@@ -812,49 +738,6 @@ void            dfs(t_lemin *lem)
     del_last_visited(lem);
     //dfs(lem);
 }
-
-///////////////////////////////////////////////////////////
-
-//int     dfs(t_lemin *lem, int room, int step , int link)
-//{
-//    if (!lem->start_dfs)
-//        return (0);
-//    if (room == 0 && link == lem->room_num - 1)
-//    {
-//        lem->start_dfs = 0;
-//        return (0);
-//    }
-//    if (!is_some_links(lem, room, link + 1) && room != 0)
-//    {
-//        lem->is_visited[room] = 0;
-//        dfs(lem, room - 1, step - 1, room);
-//    }
-//    while (++link <= lem->room_num - 1)
-//        if (lem->matrix[room][link] == 1 && lem->is_visited[link] == 0)
-//        {
-//            lem->is_visited[room] = 1;
-//            printf("\n Room [%d]", room);
-//             add_cur_room(lem, room);
-//         //   print_wy(lem); steps
-//            if (link == lem->room_num - 1)
-//            {
-//                printf("\n Room [%d]", link);
-//                lem->is_visited[room] = 0;
-//                lem->is_visited[link] = 0;
-//                add_new_step(lem, room, link);
-//                print_wy(lem);
-//                rm_room_link(lem, room, link);
-//                dfs(lem, room - 1, step -1, room);
-//            }
-//            dfs(lem, link, step + 1, 0);
-//        }
-//    if (!is_some_links(lem, room, link) && room != 0)
-//    {
-//        lem->is_visited[room] = 0;
-//        dfs(lem, room - 1, step - 1, room);
-//    }
-//    return (0);
-//}
 
 void        print_way(t_rooms *rooms, t_lemin *lem)
 {
@@ -893,6 +776,32 @@ void recursion(t_lemin *lem)
     //dfs(lem, 0, 0, 0);
 //    print_visited(lem,lem->way);
 }
+
+void            print_all_ways(t_lemin *lem, t_rooms *rooms)
+{
+    t_lemin     *tmp;
+    int         i;
+    int         count;
+
+    tmp = lem;
+    count = 0;
+    while (tmp->ways)
+    {
+        i = -1;
+        printf("\n %d Way:     ", count++);
+        while (++i < lem->room_num)
+        {
+            if (tmp->ways->way[i] != -1) {
+                printf("%s", find_room_name(rooms, lem, tmp->ways->way[i]));
+                if (tmp->ways->way[i] != lem->room_num - 1)
+                    printf("->");
+            }
+        }
+        tmp->ways = tmp->ways->next;
+    }
+
+}
+
 int main()
 {
     char        *str;
@@ -925,6 +834,7 @@ int main()
     print_matrix(lem);
     print_link_num(lem);
     recursion(lem);
+    print_all_ways(lem, rooms);
    // print_way(rooms, lem);
     return (0);
 }

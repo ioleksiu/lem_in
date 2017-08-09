@@ -12,6 +12,10 @@ CMakeFiles/LEM_IN.dir/ft_counts.c.o
 CMakeFiles/LEM_IN.dir/ft_countw.c.o
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_countw.c
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/lem_in.h
+CMakeFiles/LEM_IN.dir/ft_isalnum.c.o
+ /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_isalnum.c
+CMakeFiles/LEM_IN.dir/ft_isdigit.c.o
+ /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_isdigit.c
 CMakeFiles/LEM_IN.dir/ft_strcat.c.o
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strcat.c
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o

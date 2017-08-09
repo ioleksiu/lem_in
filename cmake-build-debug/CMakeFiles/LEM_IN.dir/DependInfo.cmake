@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_bzero.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_bzero.c.o"
   "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_counts.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_counts.c.o"
   "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_countw.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_countw.c.o"
+  "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_isalnum.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_isalnum.c.o"
+  "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_isdigit.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_isdigit.c.o"
   "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strcat.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_strcat.c.o"
   "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strchr.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_strchr.c.o"
   "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strequ.c" "/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/cmake-build-debug/CMakeFiles/LEM_IN.dir/ft_strequ.c.o"

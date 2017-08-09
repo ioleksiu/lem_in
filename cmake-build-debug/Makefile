@@ -231,6 +231,60 @@ ft_countw.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_countw.c.s
 .PHONY : ft_countw.c.s
 
+ft_isalnum.o: ft_isalnum.c.o
+
+.PHONY : ft_isalnum.o
+
+# target to build an object file
+ft_isalnum.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_isalnum.c.o
+.PHONY : ft_isalnum.c.o
+
+ft_isalnum.i: ft_isalnum.c.i
+
+.PHONY : ft_isalnum.i
+
+# target to preprocess a source file
+ft_isalnum.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_isalnum.c.i
+.PHONY : ft_isalnum.c.i
+
+ft_isalnum.s: ft_isalnum.c.s
+
+.PHONY : ft_isalnum.s
+
+# target to generate assembly for a file
+ft_isalnum.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_isalnum.c.s
+.PHONY : ft_isalnum.c.s
+
+ft_isdigit.o: ft_isdigit.c.o
+
+.PHONY : ft_isdigit.o
+
+# target to build an object file
+ft_isdigit.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_isdigit.c.o
+.PHONY : ft_isdigit.c.o
+
+ft_isdigit.i: ft_isdigit.c.i
+
+.PHONY : ft_isdigit.i
+
+# target to preprocess a source file
+ft_isdigit.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_isdigit.c.i
+.PHONY : ft_isdigit.c.i
+
+ft_isdigit.s: ft_isdigit.c.s
+
+.PHONY : ft_isdigit.s
+
+# target to generate assembly for a file
+ft_isdigit.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_isdigit.c.s
+.PHONY : ft_isdigit.c.s
+
 ft_strcat.o: ft_strcat.c.o
 
 .PHONY : ft_strcat.o
@@ -630,6 +684,12 @@ help:
 	@echo "... ft_countw.o"
 	@echo "... ft_countw.i"
 	@echo "... ft_countw.s"
+	@echo "... ft_isalnum.o"
+	@echo "... ft_isalnum.i"
+	@echo "... ft_isalnum.s"
+	@echo "... ft_isdigit.o"
+	@echo "... ft_isdigit.i"
+	@echo "... ft_isdigit.s"
 	@echo "... ft_strcat.o"
 	@echo "... ft_strcat.i"
 	@echo "... ft_strcat.s"

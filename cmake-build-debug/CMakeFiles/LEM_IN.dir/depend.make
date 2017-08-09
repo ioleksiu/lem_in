@@ -12,6 +12,10 @@ CMakeFiles/LEM_IN.dir/ft_counts.c.o: ../lem_in.h
 CMakeFiles/LEM_IN.dir/ft_countw.c.o: ../ft_countw.c
 CMakeFiles/LEM_IN.dir/ft_countw.c.o: ../lem_in.h
 
+CMakeFiles/LEM_IN.dir/ft_isalnum.c.o: ../ft_isalnum.c
+
+CMakeFiles/LEM_IN.dir/ft_isdigit.c.o: ../ft_isdigit.c
+
 CMakeFiles/LEM_IN.dir/ft_strcat.c.o: ../ft_strcat.c
 
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o: ../ft_strchr.c

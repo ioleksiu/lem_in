@@ -22,6 +22,10 @@ lem_in.h
 lem_in.h
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/lem_in.h
 
+/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_isalnum.c
+
+/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_isdigit.c
+
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strcat.c
 
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strchr.c
@@ -84,8 +88,6 @@ stdio.h
 string.h
 -
 stdlib.h
--
-ctype.h
 -
 lem_in.h
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/lem_in.h

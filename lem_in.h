@@ -31,6 +31,7 @@ typedef struct		s_get
 typedef struct      s_ways
 {
     int             *way;
+    int             way_len;
     struct s_ways   *next;
 }                   t_ways;
 
@@ -54,6 +55,8 @@ typedef struct          s_lemin
     int                 *queue;// n * n
     int                 *visited;//n
     struct s_ways       *ways;
+    char                *input;
+    int                 **uncrossible;
     //
 }                       t_lemin;
 
@@ -63,6 +66,7 @@ typedef struct          s_rooms
     int                 id;
     int                 x;
     int                 y;
+    int                 ant_num;
     struct s_rooms      *next;
 }                       t_rooms;
 
@@ -89,5 +93,7 @@ int                 is_alnum_str(char *str);
 int                 find_room(char *room , t_rooms *a);
 int	                ft_strequ(char const *s1, char const *s2);
 int                 ft_strnequ(char const *s1, char const *s2, size_t n);
+int	                ft_isalnum(int c);
+int	                ft_isdigit(int c);
 
 #endif

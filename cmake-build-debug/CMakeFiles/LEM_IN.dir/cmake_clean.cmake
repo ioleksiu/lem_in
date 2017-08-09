@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LEM_IN.dir/print.c.o"
   "CMakeFiles/LEM_IN.dir/ft_strequ.c.o"
   "CMakeFiles/LEM_IN.dir/ft_strnequ.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_isalnum.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_isdigit.c.o"
   "LEM_IN.pdb"
   "LEM_IN"
 )

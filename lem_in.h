@@ -50,7 +50,7 @@ typedef struct          s_lemin
     int                 is_end;
     int                 command;
     int                 *link_num;
-    int                 jope;
+    int                 way_num;
 //    int                 start_dfs;
     int                 *queue;// n * n
     int                 *visited;//n

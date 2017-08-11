@@ -21,6 +21,16 @@
 # include <stdio.h>
 #include <unistd.h>
 
+typedef struct          s_rooms
+{
+    char                *r_name;
+    int                 id;
+    int                 x;
+    int                 y;
+    int                 ant_num;
+    struct s_rooms      *next;
+}                       t_rooms;
+
 typedef struct		s_get
 {
     char			*rest;
@@ -51,24 +61,15 @@ typedef struct          s_lemin
     int                 command;
     int                 *link_num;
     int                 way_num;
-//    int                 start_dfs;
     int                 *queue;// n * n
     int                 *visited;//n
     struct s_ways       *ways;
     char                *input;
     int                 **uncrossible;
+    t_rooms             **ways_to_go;
     //
 }                       t_lemin;
 
-typedef struct          s_rooms
-{
-    char                *r_name;
-    int                 id;
-    int                 x;
-    int                 y;
-    int                 ant_num;
-    struct s_rooms      *next;
-}                       t_rooms;
 
 int					get_next_line(const int fd, char **line);
 //GNL

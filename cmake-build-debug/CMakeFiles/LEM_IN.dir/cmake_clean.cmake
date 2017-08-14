@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LEM_IN.dir/ft_isalnum.c.o"
   "CMakeFiles/LEM_IN.dir/ft_isdigit.c.o"
   "CMakeFiles/LEM_IN.dir/ft_strdup.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_atoi.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_strcmp.c.o"
   "LEM_IN.pdb"
   "LEM_IN"
 )

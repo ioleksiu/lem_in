@@ -10,6 +10,10 @@
 lem_in.h
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/lem_in.h
 
+/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_atoi.c
+stdlib.h
+-
+
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_bzero.c
 string.h
 -
@@ -31,6 +35,8 @@ lem_in.h
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strchr.c
 string.h
 -
+
+/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strcmp.c
 
 /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strdup.c
 string.h

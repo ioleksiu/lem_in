@@ -150,6 +150,33 @@ error.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/error.c.s
 .PHONY : error.c.s
 
+ft_atoi.o: ft_atoi.c.o
+
+.PHONY : ft_atoi.o
+
+# target to build an object file
+ft_atoi.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_atoi.c.o
+.PHONY : ft_atoi.c.o
+
+ft_atoi.i: ft_atoi.c.i
+
+.PHONY : ft_atoi.i
+
+# target to preprocess a source file
+ft_atoi.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_atoi.c.i
+.PHONY : ft_atoi.c.i
+
+ft_atoi.s: ft_atoi.c.s
+
+.PHONY : ft_atoi.s
+
+# target to generate assembly for a file
+ft_atoi.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_atoi.c.s
+.PHONY : ft_atoi.c.s
+
 ft_bzero.o: ft_bzero.c.o
 
 .PHONY : ft_bzero.o
@@ -338,6 +365,33 @@ ft_strchr.s: ft_strchr.c.s
 ft_strchr.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strchr.c.s
 .PHONY : ft_strchr.c.s
+
+ft_strcmp.o: ft_strcmp.c.o
+
+.PHONY : ft_strcmp.o
+
+# target to build an object file
+ft_strcmp.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strcmp.c.o
+.PHONY : ft_strcmp.c.o
+
+ft_strcmp.i: ft_strcmp.c.i
+
+.PHONY : ft_strcmp.i
+
+# target to preprocess a source file
+ft_strcmp.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strcmp.c.i
+.PHONY : ft_strcmp.c.i
+
+ft_strcmp.s: ft_strcmp.c.s
+
+.PHONY : ft_strcmp.s
+
+# target to generate assembly for a file
+ft_strcmp.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strcmp.c.s
+.PHONY : ft_strcmp.c.s
 
 ft_strdup.o: ft_strdup.c.o
 
@@ -702,6 +756,9 @@ help:
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"
+	@echo "... ft_atoi.o"
+	@echo "... ft_atoi.i"
+	@echo "... ft_atoi.s"
 	@echo "... ft_bzero.o"
 	@echo "... ft_bzero.i"
 	@echo "... ft_bzero.s"
@@ -723,6 +780,9 @@ help:
 	@echo "... ft_strchr.o"
 	@echo "... ft_strchr.i"
 	@echo "... ft_strchr.s"
+	@echo "... ft_strcmp.o"
+	@echo "... ft_strcmp.i"
+	@echo "... ft_strcmp.s"
 	@echo "... ft_strdup.o"
 	@echo "... ft_strdup.i"
 	@echo "... ft_strdup.s"

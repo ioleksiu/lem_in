@@ -4,6 +4,8 @@
 CMakeFiles/LEM_IN.dir/error.c.o: ../error.c
 CMakeFiles/LEM_IN.dir/error.c.o: ../lem_in.h
 
+CMakeFiles/LEM_IN.dir/ft_atoi.c.o: ../ft_atoi.c
+
 CMakeFiles/LEM_IN.dir/ft_bzero.c.o: ../ft_bzero.c
 
 CMakeFiles/LEM_IN.dir/ft_counts.c.o: ../ft_counts.c
@@ -19,6 +21,8 @@ CMakeFiles/LEM_IN.dir/ft_isdigit.c.o: ../ft_isdigit.c
 CMakeFiles/LEM_IN.dir/ft_strcat.c.o: ../ft_strcat.c
 
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o: ../ft_strchr.c
+
+CMakeFiles/LEM_IN.dir/ft_strcmp.c.o: ../ft_strcmp.c
 
 CMakeFiles/LEM_IN.dir/ft_strdup.c.o: ../ft_strdup.c
 CMakeFiles/LEM_IN.dir/ft_strdup.c.o: ../lem_in.h

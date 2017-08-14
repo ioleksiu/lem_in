@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ioleksiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/15 16:09:41 by ioleksiu          #+#    #+#             */
-/*   Updated: 2016/12/15 16:53:13 by ioleksiu         ###   ########.fr       */
+/*   Created: 2016/11/30 17:59:57 by ioleksiu          #+#    #+#             */
+/*   Updated: 2016/12/01 18:00:12 by ioleksiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-char	*ft_strchr(const char *s, int c)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	char *str;
-
-	str = (char *)s;
-	if ((char)c == '\0')
+	while (*s1 && *s2 && *s2 == *s1)
 	{
-		while (*str != '\0')
-			str++;
-		return (str);
+		s1++;
+		s2++;
 	}
-	if (str)
-	while (*str)
-	{
-		if (*str == (char)c)
-			return (str);
-		str++;
-	}
-	return (NULL);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

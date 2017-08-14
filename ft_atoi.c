@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ioleksiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/15 16:09:41 by ioleksiu          #+#    #+#             */
-/*   Updated: 2016/12/15 16:53:13 by ioleksiu         ###   ########.fr       */
+/*   Created: 2016/12/09 18:17:31 by ioleksiu          #+#    #+#             */
+/*   Updated: 2016/12/15 16:57:05 by ioleksiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <stdlib.h>
 
-char	*ft_strchr(const char *s, int c)
+int	ft_atoi(const char *str)
 {
-	char *str;
+	int	sign;
+	int	number;
 
-	str = (char *)s;
-	if ((char)c == '\0')
+	number = 0;
+	sign = 1;
+	while (*str == ' ' || (*str > 8 && *str < 14))
+		str++;
+	if (*str == '-')
 	{
-		while (*str != '\0')
-			str++;
-		return (str);
-	}
-	if (str)
-	while (*str)
-	{
-		if (*str == (char)c)
-			return (str);
+		sign = -1;
 		str++;
 	}
-	return (NULL);
+	else if (*str == '+')
+		str++;
+	while (*str >= '0' && *str <= '9')
+	{
+		number *= 10;
+		number += *str - 48;
+		str++;
+	}
+	return (number * sign);
 }

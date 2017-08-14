@@ -4,6 +4,8 @@
 CMakeFiles/LEM_IN.dir/error.c.o
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/error.c
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/lem_in.h
+CMakeFiles/LEM_IN.dir/ft_atoi.c.o
+ /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_atoi.c
 CMakeFiles/LEM_IN.dir/ft_bzero.c.o
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_bzero.c
 CMakeFiles/LEM_IN.dir/ft_counts.c.o
@@ -20,6 +22,8 @@ CMakeFiles/LEM_IN.dir/ft_strcat.c.o
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strcat.c
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strchr.c
+CMakeFiles/LEM_IN.dir/ft_strcmp.c.o
+ /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strcmp.c
 CMakeFiles/LEM_IN.dir/ft_strdup.c.o
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strdup.c
  /nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/lem_in.h

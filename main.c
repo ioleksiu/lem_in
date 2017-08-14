@@ -22,6 +22,8 @@ int is_comment(char *str)
     return  ((str[0] == '#' && str[1] != '#') || ft_strnequ(str, "###", 3));
 }
 
+void		muravei_idi(t_lemin *lem, t_rooms *rooms);
+
 int         valid_room(char *str, t_rooms *a, t_lemin *lem)
 {
     char    **arr;
@@ -142,6 +144,7 @@ t_lemin    *struct_init()
     a->ways = NULL;
     a->input = NULL;
     a->way_num = 0;
+    //a->set_paths = NULL;
     //a->jope = 0;
 //    a->start_dfs = 1;
     return (a);
@@ -220,7 +223,7 @@ t_rooms    *create_room_list(char *str, t_lemin *lem, int flag)
         lem->start_id = 0;
     if (flag == 2)
         lem->end_id = 0;
-    temp->ant_num = 0;
+    temp->ant_num = -1;
    return (temp);
 }
 
@@ -252,7 +255,7 @@ t_rooms        *add_room(char *str, t_rooms *rooms, t_lemin *lem, int flag)
         lem->end_id = (flag == 2) ? id : lem->end_id;
         lem->room_num = id + 1;
         free(str);
-        temp->ant_num = 0;
+        temp->ant_num = -1;
     }
     return (rooms);
 }
@@ -377,8 +380,7 @@ char            *find_room_name(t_rooms *rooms, t_lemin *lem, int id)
         temp = temp->next;
     if (temp->id == id)
         return (temp->r_name);
-  //  ft_error();
-    return (0);
+     return (0);
 }
 
 void            swap_start_end(t_rooms *rooms, t_lemin *lem)
@@ -523,18 +525,6 @@ void        add_q_static(t_lemin *lem, int  *ochered)
         ochered[++count] = -1;
 }
 
-void        print_q_static(int *ochered, t_lemin *lem)
-{
-    int     i;
-
-    i = -1;
-    printf("Q:");
-    while (++i < lem->room_num)
-        printf("[%d]", ochered[i]);
-    printf("\n");
-
-}
-
 void        del_q_static(int *q, int size)
 {
     int     i;
@@ -554,10 +544,6 @@ void        del_q_static(int *q, int size)
         }
         i++;
     }
-//    i = -1;
-//    while (q[++i] != -1)
-//        ;
-//    q[i - 1] = -1;
 }
 
 void            create_fist_way(t_lemin *lem)
@@ -567,7 +553,6 @@ void            create_fist_way(t_lemin *lem)
     lem->ways = (t_ways*)malloc(sizeof(t_ways));
     lem->ways->way = (int*)malloc(sizeof(int) * lem->room_num);
     lem->ways->next = NULL;
-    //may be cab be del
     i = -1;
     lem->ways->way_len = 0;
     while (++i < lem->room_num)
@@ -576,7 +561,6 @@ void            create_fist_way(t_lemin *lem)
         if (lem->visited[i] != -1)
             lem->ways->way_len++;
     }
-    //lem->ways->way[++i] = -1;
 }
 
 void            add_way(t_lemin *lem)
@@ -603,24 +587,19 @@ void            add_way(t_lemin *lem)
             if (tmp->next->way[i] != -1)
                 tmp->next->way_len++;
         }
-       // tmp->next->way[i] = -1;
-    }
-//    tmp->room_links = malloc(sizeof(t_rooms) * tmp->next->way_len);
+	}
 }
-//////////////////////////////////////////////////////////
+
 void            dfs(t_lemin *lem)
 {
     int         ochered[lem->room_num + 1];
 
-  //  printf("\n\nWHERE AM I: %d\n", last_v(lem));
     if (last_v(lem) == lem->room_num - 1)
     {
-   //     print_v(lem);
         lem->way_num++;
         add_way(lem);
-      //  print_q_static(ochered, lem);
         del_last_visited(lem);
-        del_q_static(ochered, lem->room_num);//del
+        del_q_static(ochered, lem->room_num);
         return;
     }
     add_q_static(lem, ochered);//add queue
@@ -703,13 +682,10 @@ void        swap_nodes(t_ways *a, t_ways *b)
 {
     t_ways  *c;
 
-    //c = *a;
     c->way_len = a->way_len;
     c->way = a->way;
-    //*a = *b;
     a->way_len = b->way_len;
     a->way = b->way;
-    //*b = c;
     b->way_len = c->way_len;
     b->way = c->way;
 }
@@ -742,10 +718,7 @@ int     are_crossing(t_ways *way1, t_ways *way2, t_lemin *lem)
             i = 0;
             while (++i < lem->room_num && way1->way[i] != lem->room_num-1)
             {
-//                if (way1->way[i] == lem->room_num - 1)
-//                    return (0);
-                if (way1->way[i] == way2->way[j]/* &&
-                    !((way1->way[i] == lem->room_num - 1) && (way2->way[j] == lem->room_num - 1))*/)
+                if (way1->way[i] == way2->way[j])
                     return (1);
             }
         }
@@ -753,18 +726,6 @@ int     are_crossing(t_ways *way1, t_ways *way2, t_lemin *lem)
     return (0);
 }
 
-t_ways          *find_way_by_id(t_lemin *lem, int id)
-{
-    t_ways      *way;
-
-    way = lem->ways;
-    if (id == 0)
-        return (way);
-    while (id--)
-        way = way->next;
-    return (way);
-
-}
 void            rm_crossing(t_lemin *lem)
 {
     int         i;
@@ -780,148 +741,8 @@ void            rm_crossing(t_lemin *lem)
                     lem->uncrossible[i][j] = 0;
     }
 }
-void        is_cross_arr(t_lemin *lem)
-{
-    int     i;
-    int     j;
-    t_ways  *way1;
-    t_ways  *way2;
 
-    way1 = lem->ways;
-    way2 = lem->ways;
-    lem->uncrossible = (int**)(malloc(sizeof(int*) * lem->way_num));
-    i=0;
-    //printf("\n");
-    while (i < lem->way_num)
-    {
-        lem->uncrossible[i] = (int*)malloc(sizeof(int) * lem->way_num);
-        i++;
-    }
-    i = -1;
-    while (++i < lem->way_num)
-    {
-        printf("\n[%2d]",i);
-        j = -1;
-        while (++j < lem->way_num)
-        {
-            if (are_crossing(way1, way2, lem))
-                lem->uncrossible[i][j] = 0;
-            else
-                lem->uncrossible[i][j] = 1;
-            printf("[%d]",lem->uncrossible[i][j]);
-            way2 = way2->next;
-        }
-        //printf("\n[%d]",i);
-        way1 = way1->next;
-        way2 = lem->ways;
-    }
-    rm_crossing(lem);
-}
-
-void print_matrix_cross(t_lemin *lem)
-{
-    int i;
-    int j;
-
-    i = -1;
-    printf("\n---------------\n");
-    while (++i < lem->way_num)
-    {
-        j = -1;
-        printf("[%2d]",i);
-        while (++j < lem->way_num)
-            printf("[%d]", lem->uncrossible[i][j]);
-        printf("\n");
-    }
-}
-
-int     calc_num_ways_need(t_lemin *lem)
-{
-    int     ant_num;
-    t_ways  *ways;
-    int     num_ways;
-    int     i;
-
-    num_ways = 0;
-    i = 0;
-    ways = lem->ways;
-    ant_num = lem->n_ants;
-    if (ant_num == 1)
-        return (1);
-    while (ways)
-    {
-        if (lem->uncrossible[0][i] == 1)
-        {
-            if(ant_num >= ways->way_len)
-            {
-                ant_num -= ways->way_len;
-                num_ways++;
-            }
-            else
-                return (num_ways);
-        }
-        i++;
-        ways = ways->next;
-    }
-    return (num_ways);
-}
-
-//void
-//void        muravei_idi(t_lemin *lem, t_rooms *rooms)
-//{
-//    int     ways_num;
-//    int     ants_in_the_way;
-//    t_ways  *ways;
-//    int     cur_ant_num;
-//    int     i;
-//
-//    i = 0;
-//    cur_ant_num = lem->n_ants - ants_in_the_way + 1;
-//    ways = lem->ways;
-//    ants_in_the_way = lem->n_ants;
-//    ways_num = calc_num_ways_need(lem);
-//
-//    int ant = 1;
-//    while (ant <= ants)
-//    {
-//        if (ant != ants)
-//            move_new_ants(&ant);
-////        if (!is_free_way_first_room())
-//        move_old_ants();
-//    }
-//
-
-//
-//    while (ants_in_the_way)
-//    {
-//        while (!last_way)
-//        {
-//            if (is_free_way_first_room())
-//                place_ant();
-//            else
-//                move_ants();
-//            if lem->uncrossible[0][i] == 1;
-//        }
-//    }
-
-//}
-
-void    add_way_room_links(t_lemin *lem, t_rooms *rooms)
-{
-    int i;
-    int w_need;
-
-    find_way_by_id(lem, 1);
-
-    i = 0;
-    w_need = calc_num_ways_need(lem);
-    lem->ways_to_go = (t_rooms**)malloc(sizeof(t_rooms*) * w_need);
-    while (i < w_need)
-    {
-        lem->ways_to_go[i] = find_room_by_id(rooms, lem->)
-        i++;
-    }
-}
+void	ft_remove_redundant_path(t_lemin *lem, t_rooms *rooms);
 
 int main()
 {
@@ -934,7 +755,7 @@ int main()
     ants_number(lem);
     while (get_next_line(0, &str))
     {
-        if (ft_strequ(str,"hui")) //DELL ME
+        if (ft_strequ(str,"stop")) //DELL ME
             break;
         if (is_comment(str))
             free(str);
@@ -954,17 +775,185 @@ int main()
     //print_list(lem,rooms);
     //print_matrix(lem);
     //print_link_num(lem);
+	lem->rooms = rooms;
     recursion(lem);
     sort_ways(lem);
-    if(are_crossing(lem->ways, lem->ways->next, lem))
-        printf("\n CROSS");
-    else
-        printf("\n Do not cross");
-    print_all_ways(lem, rooms);
-    is_cross_arr(lem);
-    print_matrix_cross(lem);
-   // printf("\n %d", are_crossing(lem->ways, lem->ways->next, lem));
-   // print_way(rooms, lem);
-    printf("\n Num ways:%d",calc_num_ways_need(lem));
+	ft_remove_redundant_path(lem, rooms);
+	print_all_ways(lem, rooms);
+	printf("\n");
+//    if(are_crossing(lem->ways, lem->ways->next, lem))
+//        printf("\n CROSS");
+//    else
+//        printf("\n Do not cross");
+//    lem->rooms = rooms;
+//    print_all_ways(lem, rooms);
+//    is_cross_arr(lem);
+//    print_matrix_cross(lem);
+//  	printf("\n %d", are_crossing(lem->ways, lem->ways->next, lem));
+//	print_way(rooms, lem);
+//    printf("\n Num ways:%d",calc_num_ways_need(lem));
+	muravei_idi(lem, rooms);
     return (0);
+}
+
+void	ft_delete_path(t_ways **path, t_ways **current)
+{
+	t_ways *prev;
+	t_ways *head;
+
+	head = *path;
+	if (head == *current)
+	{
+		if (head == NULL)
+			return ;
+		head->way = head->next->way;
+		head->next = head->next->next;
+		free((*current)->way);
+		free((*current));
+		return ;
+	}
+	prev = *path;
+	while (prev->next && prev->next != *current)
+		prev = prev->next;
+	if (prev->next == NULL)
+		return ;
+	prev->next = prev->next->next;
+	free((*current)->way);
+	free((*current));
+	return ;
+}
+
+int 	ft_room_in_path(int size, int *way, int room)
+{
+	int i;
+
+	i = 1;
+	while (i < size && way[i] != -1)
+	{
+		if (way[i] == room)
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
+void	ft_remove_redundant_path(t_lemin *lem, t_rooms *rooms)
+{
+	t_ways	*start;
+	t_ways	*next;
+	int 	i;
+
+	start = lem->ways;
+	while (start)
+	{
+		i = 1;
+		while (i < lem->room_num && start->way[i] != -1)
+		{
+			if (start->way[i] == lem->room_num - 1)
+				break ;
+			next = start->next;
+			if (next == NULL)
+				break ;
+			while (next)
+			{
+				if (ft_room_in_path(lem->room_num, next->way, start->way[i]))
+					ft_delete_path(&(lem->ways), &(next));
+				next = next->next;
+			}
+			i++;
+		}
+		start = start->next;
+	}
+
+}
+
+t_rooms		*get_room_by_ant_id(t_rooms *rooms, t_lemin *lem, int id)
+{
+	t_rooms *tmp;
+
+	tmp = rooms;
+	while (tmp)
+	{
+		if (tmp->ant_num == id)
+			return (tmp);
+		tmp = tmp->next;
+	}
+	return (rooms);
+}
+
+int 		ft_room_position(int *way, int size, int room)
+{
+	int i;
+
+	i = 0;
+	while (i < size && way[i] != -1)
+	{
+		if (way[i] == room)
+			return (i);
+		i++;
+	}
+	return (-1);
+}
+
+void		muravei_idi(t_lemin *lem, t_rooms *rooms)
+{
+	int 	ant_num;
+	int 	*is_ant_finished;
+	int 	i;
+	int 	pos;
+	t_rooms	*room;
+	t_rooms *next_room;
+	t_ways 	*ways;
+	t_rooms *temp;
+
+	temp = rooms;
+	while (temp)
+	{
+		temp->ant_num = -1;
+		temp = temp->next;
+	}
+	ant_num = lem->n_ants;
+	i = 0;
+	is_ant_finished = (int*)malloc(sizeof(int) * lem->n_ants);
+	while (i < lem->n_ants)
+	{
+		is_ant_finished[i] = 1;
+		i++;
+	}
+	while (lem->n_ants != 0)
+	{
+		i = 0;
+		while (i < ant_num)
+		{
+			if (is_ant_finished[i] == 1)
+			{
+				ways = lem->ways;
+				room = get_room_by_ant_id(rooms, lem, i + 1);
+				while (ways)
+				{
+					pos = ft_room_position(ways->way, lem->room_num, room->id);
+					if (pos != -1)
+					{
+						next_room = find_room_by_id(rooms, ways->way[pos + 1]);
+						if (next_room->ant_num == -1)
+						{
+							room->ant_num = -1;
+							if (next_room->id == lem->room_num - 1)
+							{
+								lem->n_ants--;
+								is_ant_finished[i] = 0;
+							}
+							else
+								next_room->ant_num = i + 1;
+							printf("L%d-%s ", i + 1, next_room->r_name);
+							break ;
+						}
+					}
+					ways = ways->next;
+				}
+			}
+			i++;
+		}
+		printf("\n");
+	}
 }

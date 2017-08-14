@@ -20,6 +20,9 @@ CMakeFiles/LEM_IN.dir/ft_strcat.c.o: ../ft_strcat.c
 
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o: ../ft_strchr.c
 
+CMakeFiles/LEM_IN.dir/ft_strdup.c.o: ../ft_strdup.c
+CMakeFiles/LEM_IN.dir/ft_strdup.c.o: ../lem_in.h
+
 CMakeFiles/LEM_IN.dir/ft_strequ.c.o: ../ft_strequ.c
 
 CMakeFiles/LEM_IN.dir/ft_strjoin.c.o: ../ft_strjoin.c

@@ -12,58 +12,87 @@
 
 #include "lem_in.h"
 
-static char		**ft_mem_dl(void **ap)
+static	int		obst_or_empty(const char *s, char ch)
 {
-	int		i;
+	int	i;
 
 	i = 0;
-	if (ap)
+	if (s[i] == '\0')
+		return (1);
+	while (s[i] != '\0')
 	{
-		while (ap[i])
-			i++;
-		while (ap[i])
-			free(ap[i--]);
-		*ap = NULL;
+		if (s[i] != ch)
+			return (0);
+		i++;
 	}
-	return (0);
+	return (1);
 }
 
-static char		**alloc(char *s, char c)
+static	int		count_words(const char *s, char ch)
 {
-	char	**dst;
+	int		words;
+	size_t	i;
 
-	if (!(dst = (char **)malloc(sizeof(char *) * ft_countw(s, c)))) // tyt huinia
-		return (0);
-	if (!(dst[0] = (char*)malloc(sizeof(char) * ft_counts(s, c))))
-		return (0);
-	return (dst);
-}
-
-char			**ft_strsplit(char const *s, char c)
-{
-	char	**dst;
-	size_t	x;
-	size_t	y;
-
-	x = 0;
-	if (!s)
-		return (0);
-	if (!(dst = alloc((char *)s, c)))
-		return (0);
-	while (*s != '\0')
+	words = 0;
+	i = 0;
+	if (obst_or_empty(s, ch))
+		return (1);
+	if (s[i] != ch)
+		words++;
+	while (i < ft_strlen(s) - 1)
 	{
-		while (*s == c && *s != '\0')
-			s++;
-		if (*s != c && *s != '\0')
+		if (s[i] == ch)
 		{
-			y = 0;
-			if (!(dst[x] = (char*)malloc(sizeof(char) * ft_counts(s, c))))
-				return (ft_mem_dl((void **)(dst)));
-			while (*s != c && *s != '\0')
-				dst[x][y++] = *s++;
-			dst[x++][y] = '\0';
+			if (s[i + 1] != ch)
+				words++;
 		}
+		i++;
 	}
-	dst[x] = 0;
-	return (dst);
+	return (words);
+}
+
+static	int		read_obst(const char *s, int i, char ch)
+{
+	while ((s[i] == ch) && (s[i] != '\0'))
+		i++;
+	return (i);
+}
+
+static	int		next_word(const char *s, int i, char ch)
+{
+	int	j;
+
+	j = 0;
+	while ((s[i + j] != ch) && (s[i + j] != '\0'))
+		j++;
+	return (j);
+}
+
+char			**ft_strsplit(const char *s, char ch)
+{
+	char	**res;
+	int		i;
+	int		j;
+	int		k;
+
+	k = 0;
+	res = (char **)malloc(sizeof(char *) * (count_words(s, ch) + 1));
+	if (!res)
+		return (NULL);
+	if (obst_or_empty(s, ch))
+		res[k++] = NULL;
+	i = 0;
+	while (k < count_words(s, ch))
+	{
+		j = 0;
+		i = read_obst(s, i, ch);
+		res[k] = ft_strnew(next_word(s, i, ch));
+		if (!(res[k]))
+			return (NULL);
+		while (next_word(s, i, ch))
+			res[k][j++] = s[i++];
+		res[k++][j] = '\0';
+	}
+	res[k] = NULL;
+	return (res);
 }

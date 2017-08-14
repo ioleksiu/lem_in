@@ -339,6 +339,33 @@ ft_strchr.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strchr.c.s
 .PHONY : ft_strchr.c.s
 
+ft_strdup.o: ft_strdup.c.o
+
+.PHONY : ft_strdup.o
+
+# target to build an object file
+ft_strdup.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strdup.c.o
+.PHONY : ft_strdup.c.o
+
+ft_strdup.i: ft_strdup.c.i
+
+.PHONY : ft_strdup.i
+
+# target to preprocess a source file
+ft_strdup.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strdup.c.i
+.PHONY : ft_strdup.c.i
+
+ft_strdup.s: ft_strdup.c.s
+
+.PHONY : ft_strdup.s
+
+# target to generate assembly for a file
+ft_strdup.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_strdup.c.s
+.PHONY : ft_strdup.c.s
+
 ft_strequ.o: ft_strequ.c.o
 
 .PHONY : ft_strequ.o
@@ -696,6 +723,9 @@ help:
 	@echo "... ft_strchr.o"
 	@echo "... ft_strchr.i"
 	@echo "... ft_strchr.s"
+	@echo "... ft_strdup.o"
+	@echo "... ft_strdup.i"
+	@echo "... ft_strdup.s"
 	@echo "... ft_strequ.o"
 	@echo "... ft_strequ.i"
 	@echo "... ft_strequ.s"

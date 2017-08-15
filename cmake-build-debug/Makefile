@@ -123,6 +123,357 @@ LEM_IN/fast:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/build
 .PHONY : LEM_IN/fast
 
+add_link.o: add_link.c.o
+
+.PHONY : add_link.o
+
+# target to build an object file
+add_link.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_link.c.o
+.PHONY : add_link.c.o
+
+add_link.i: add_link.c.i
+
+.PHONY : add_link.i
+
+# target to preprocess a source file
+add_link.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_link.c.i
+.PHONY : add_link.c.i
+
+add_link.s: add_link.c.s
+
+.PHONY : add_link.s
+
+# target to generate assembly for a file
+add_link.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_link.c.s
+.PHONY : add_link.c.s
+
+add_q_static.o: add_q_static.c.o
+
+.PHONY : add_q_static.o
+
+# target to build an object file
+add_q_static.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_q_static.c.o
+.PHONY : add_q_static.c.o
+
+add_q_static.i: add_q_static.c.i
+
+.PHONY : add_q_static.i
+
+# target to preprocess a source file
+add_q_static.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_q_static.c.i
+.PHONY : add_q_static.c.i
+
+add_q_static.s: add_q_static.c.s
+
+.PHONY : add_q_static.s
+
+# target to generate assembly for a file
+add_q_static.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_q_static.c.s
+.PHONY : add_q_static.c.s
+
+add_room.o: add_room.c.o
+
+.PHONY : add_room.o
+
+# target to build an object file
+add_room.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_room.c.o
+.PHONY : add_room.c.o
+
+add_room.i: add_room.c.i
+
+.PHONY : add_room.i
+
+# target to preprocess a source file
+add_room.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_room.c.i
+.PHONY : add_room.c.i
+
+add_room.s: add_room.c.s
+
+.PHONY : add_room.s
+
+# target to generate assembly for a file
+add_room.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_room.c.s
+.PHONY : add_room.c.s
+
+add_visited_static.o: add_visited_static.c.o
+
+.PHONY : add_visited_static.o
+
+# target to build an object file
+add_visited_static.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_visited_static.c.o
+.PHONY : add_visited_static.c.o
+
+add_visited_static.i: add_visited_static.c.i
+
+.PHONY : add_visited_static.i
+
+# target to preprocess a source file
+add_visited_static.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_visited_static.c.i
+.PHONY : add_visited_static.c.i
+
+add_visited_static.s: add_visited_static.c.s
+
+.PHONY : add_visited_static.s
+
+# target to generate assembly for a file
+add_visited_static.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_visited_static.c.s
+.PHONY : add_visited_static.c.s
+
+add_way.o: add_way.c.o
+
+.PHONY : add_way.o
+
+# target to build an object file
+add_way.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_way.c.o
+.PHONY : add_way.c.o
+
+add_way.i: add_way.c.i
+
+.PHONY : add_way.i
+
+# target to preprocess a source file
+add_way.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_way.c.i
+.PHONY : add_way.c.i
+
+add_way.s: add_way.c.s
+
+.PHONY : add_way.s
+
+# target to generate assembly for a file
+add_way.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/add_way.c.s
+.PHONY : add_way.c.s
+
+ant_number.o: ant_number.c.o
+
+.PHONY : ant_number.o
+
+# target to build an object file
+ant_number.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ant_number.c.o
+.PHONY : ant_number.c.o
+
+ant_number.i: ant_number.c.i
+
+.PHONY : ant_number.i
+
+# target to preprocess a source file
+ant_number.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ant_number.c.i
+.PHONY : ant_number.c.i
+
+ant_number.s: ant_number.c.s
+
+.PHONY : ant_number.s
+
+# target to generate assembly for a file
+ant_number.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ant_number.c.s
+.PHONY : ant_number.c.s
+
+count_char.o: count_char.c.o
+
+.PHONY : count_char.o
+
+# target to build an object file
+count_char.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/count_char.c.o
+.PHONY : count_char.c.o
+
+count_char.i: count_char.c.i
+
+.PHONY : count_char.i
+
+# target to preprocess a source file
+count_char.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/count_char.c.i
+.PHONY : count_char.c.i
+
+count_char.s: count_char.c.s
+
+.PHONY : count_char.s
+
+# target to generate assembly for a file
+count_char.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/count_char.c.s
+.PHONY : count_char.c.s
+
+create_first_way.o: create_first_way.c.o
+
+.PHONY : create_first_way.o
+
+# target to build an object file
+create_first_way.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_first_way.c.o
+.PHONY : create_first_way.c.o
+
+create_first_way.i: create_first_way.c.i
+
+.PHONY : create_first_way.i
+
+# target to preprocess a source file
+create_first_way.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_first_way.c.i
+.PHONY : create_first_way.c.i
+
+create_first_way.s: create_first_way.c.s
+
+.PHONY : create_first_way.s
+
+# target to generate assembly for a file
+create_first_way.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_first_way.c.s
+.PHONY : create_first_way.c.s
+
+create_matrix.o: create_matrix.c.o
+
+.PHONY : create_matrix.o
+
+# target to build an object file
+create_matrix.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_matrix.c.o
+.PHONY : create_matrix.c.o
+
+create_matrix.i: create_matrix.c.i
+
+.PHONY : create_matrix.i
+
+# target to preprocess a source file
+create_matrix.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_matrix.c.i
+.PHONY : create_matrix.c.i
+
+create_matrix.s: create_matrix.c.s
+
+.PHONY : create_matrix.s
+
+# target to generate assembly for a file
+create_matrix.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_matrix.c.s
+.PHONY : create_matrix.c.s
+
+create_room_list.o: create_room_list.c.o
+
+.PHONY : create_room_list.o
+
+# target to build an object file
+create_room_list.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_room_list.c.o
+.PHONY : create_room_list.c.o
+
+create_room_list.i: create_room_list.c.i
+
+.PHONY : create_room_list.i
+
+# target to preprocess a source file
+create_room_list.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_room_list.c.i
+.PHONY : create_room_list.c.i
+
+create_room_list.s: create_room_list.c.s
+
+.PHONY : create_room_list.s
+
+# target to generate assembly for a file
+create_room_list.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/create_room_list.c.s
+.PHONY : create_room_list.c.s
+
+del_last_visited.o: del_last_visited.c.o
+
+.PHONY : del_last_visited.o
+
+# target to build an object file
+del_last_visited.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/del_last_visited.c.o
+.PHONY : del_last_visited.c.o
+
+del_last_visited.i: del_last_visited.c.i
+
+.PHONY : del_last_visited.i
+
+# target to preprocess a source file
+del_last_visited.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/del_last_visited.c.i
+.PHONY : del_last_visited.c.i
+
+del_last_visited.s: del_last_visited.c.s
+
+.PHONY : del_last_visited.s
+
+# target to generate assembly for a file
+del_last_visited.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/del_last_visited.c.s
+.PHONY : del_last_visited.c.s
+
+del_q_static.o: del_q_static.c.o
+
+.PHONY : del_q_static.o
+
+# target to build an object file
+del_q_static.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/del_q_static.c.o
+.PHONY : del_q_static.c.o
+
+del_q_static.i: del_q_static.c.i
+
+.PHONY : del_q_static.i
+
+# target to preprocess a source file
+del_q_static.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/del_q_static.c.i
+.PHONY : del_q_static.c.i
+
+del_q_static.s: del_q_static.c.s
+
+.PHONY : del_q_static.s
+
+# target to generate assembly for a file
+del_q_static.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/del_q_static.c.s
+.PHONY : del_q_static.c.s
+
+dfs.o: dfs.c.o
+
+.PHONY : dfs.o
+
+# target to build an object file
+dfs.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/dfs.c.o
+.PHONY : dfs.c.o
+
+dfs.i: dfs.c.i
+
+.PHONY : dfs.i
+
+# target to preprocess a source file
+dfs.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/dfs.c.i
+.PHONY : dfs.c.i
+
+dfs.s: dfs.c.s
+
+.PHONY : dfs.s
+
+# target to generate assembly for a file
+dfs.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/dfs.c.s
+.PHONY : dfs.c.s
+
 error.o: error.c.o
 
 .PHONY : error.o
@@ -149,6 +500,87 @@ error.s: error.c.s
 error.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/error.c.s
 .PHONY : error.c.s
+
+find_id.o: find_id.c.o
+
+.PHONY : find_id.o
+
+# target to build an object file
+find_id.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_id.c.o
+.PHONY : find_id.c.o
+
+find_id.i: find_id.c.i
+
+.PHONY : find_id.i
+
+# target to preprocess a source file
+find_id.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_id.c.i
+.PHONY : find_id.c.i
+
+find_id.s: find_id.c.s
+
+.PHONY : find_id.s
+
+# target to generate assembly for a file
+find_id.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_id.c.s
+.PHONY : find_id.c.s
+
+find_room.o: find_room.c.o
+
+.PHONY : find_room.o
+
+# target to build an object file
+find_room.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_room.c.o
+.PHONY : find_room.c.o
+
+find_room.i: find_room.c.i
+
+.PHONY : find_room.i
+
+# target to preprocess a source file
+find_room.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_room.c.i
+.PHONY : find_room.c.i
+
+find_room.s: find_room.c.s
+
+.PHONY : find_room.s
+
+# target to generate assembly for a file
+find_room.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_room.c.s
+.PHONY : find_room.c.s
+
+find_room_by_id.o: find_room_by_id.c.o
+
+.PHONY : find_room_by_id.o
+
+# target to build an object file
+find_room_by_id.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_room_by_id.c.o
+.PHONY : find_room_by_id.c.o
+
+find_room_by_id.i: find_room_by_id.c.i
+
+.PHONY : find_room_by_id.i
+
+# target to preprocess a source file
+find_room_by_id.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_room_by_id.c.i
+.PHONY : find_room_by_id.c.i
+
+find_room_by_id.s: find_room_by_id.c.s
+
+.PHONY : find_room_by_id.s
+
+# target to generate assembly for a file
+find_room_by_id.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/find_room_by_id.c.s
+.PHONY : find_room_by_id.c.s
 
 ft_atoi.o: ft_atoi.c.o
 
@@ -257,6 +689,33 @@ ft_countw.s: ft_countw.c.s
 ft_countw.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_countw.c.s
 .PHONY : ft_countw.c.s
+
+ft_delete_path.o: ft_delete_path.c.o
+
+.PHONY : ft_delete_path.o
+
+# target to build an object file
+ft_delete_path.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_delete_path.c.o
+.PHONY : ft_delete_path.c.o
+
+ft_delete_path.i: ft_delete_path.c.i
+
+.PHONY : ft_delete_path.i
+
+# target to preprocess a source file
+ft_delete_path.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_delete_path.c.i
+.PHONY : ft_delete_path.c.i
+
+ft_delete_path.s: ft_delete_path.c.s
+
+.PHONY : ft_delete_path.s
+
+# target to generate assembly for a file
+ft_delete_path.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_delete_path.c.s
+.PHONY : ft_delete_path.c.s
 
 ft_isalnum.o: ft_isalnum.c.o
 
@@ -392,6 +851,87 @@ ft_putstr.s: ft_putstr.c.s
 ft_putstr.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putstr.c.s
 .PHONY : ft_putstr.c.s
+
+ft_remove_redundant_path.o: ft_remove_redundant_path.c.o
+
+.PHONY : ft_remove_redundant_path.o
+
+# target to build an object file
+ft_remove_redundant_path.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_remove_redundant_path.c.o
+.PHONY : ft_remove_redundant_path.c.o
+
+ft_remove_redundant_path.i: ft_remove_redundant_path.c.i
+
+.PHONY : ft_remove_redundant_path.i
+
+# target to preprocess a source file
+ft_remove_redundant_path.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_remove_redundant_path.c.i
+.PHONY : ft_remove_redundant_path.c.i
+
+ft_remove_redundant_path.s: ft_remove_redundant_path.c.s
+
+.PHONY : ft_remove_redundant_path.s
+
+# target to generate assembly for a file
+ft_remove_redundant_path.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_remove_redundant_path.c.s
+.PHONY : ft_remove_redundant_path.c.s
+
+ft_room_in_path.o: ft_room_in_path.c.o
+
+.PHONY : ft_room_in_path.o
+
+# target to build an object file
+ft_room_in_path.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_room_in_path.c.o
+.PHONY : ft_room_in_path.c.o
+
+ft_room_in_path.i: ft_room_in_path.c.i
+
+.PHONY : ft_room_in_path.i
+
+# target to preprocess a source file
+ft_room_in_path.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_room_in_path.c.i
+.PHONY : ft_room_in_path.c.i
+
+ft_room_in_path.s: ft_room_in_path.c.s
+
+.PHONY : ft_room_in_path.s
+
+# target to generate assembly for a file
+ft_room_in_path.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_room_in_path.c.s
+.PHONY : ft_room_in_path.c.s
+
+ft_room_position.o: ft_room_position.c.o
+
+.PHONY : ft_room_position.o
+
+# target to build an object file
+ft_room_position.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_room_position.c.o
+.PHONY : ft_room_position.c.o
+
+ft_room_position.i: ft_room_position.c.i
+
+.PHONY : ft_room_position.i
+
+# target to preprocess a source file
+ft_room_position.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_room_position.c.i
+.PHONY : ft_room_position.c.i
+
+ft_room_position.s: ft_room_position.c.s
+
+.PHONY : ft_room_position.s
+
+# target to generate assembly for a file
+ft_room_position.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_room_position.c.s
+.PHONY : ft_room_position.c.s
 
 ft_strcat.o: ft_strcat.c.o
 
@@ -717,32 +1257,302 @@ get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/get_next_line.c.s
 .PHONY : get_next_line.c.s
 
-list.o: list.c.o
+get_room_by_ant_id.o: get_room_by_ant_id.c.o
 
-.PHONY : list.o
+.PHONY : get_room_by_ant_id.o
 
 # target to build an object file
-list.c.o:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/list.c.o
-.PHONY : list.c.o
+get_room_by_ant_id.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/get_room_by_ant_id.c.o
+.PHONY : get_room_by_ant_id.c.o
 
-list.i: list.c.i
+get_room_by_ant_id.i: get_room_by_ant_id.c.i
 
-.PHONY : list.i
+.PHONY : get_room_by_ant_id.i
 
 # target to preprocess a source file
-list.c.i:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/list.c.i
-.PHONY : list.c.i
+get_room_by_ant_id.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/get_room_by_ant_id.c.i
+.PHONY : get_room_by_ant_id.c.i
 
-list.s: list.c.s
+get_room_by_ant_id.s: get_room_by_ant_id.c.s
 
-.PHONY : list.s
+.PHONY : get_room_by_ant_id.s
 
 # target to generate assembly for a file
-list.c.s:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/list.c.s
-.PHONY : list.c.s
+get_room_by_ant_id.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/get_room_by_ant_id.c.s
+.PHONY : get_room_by_ant_id.c.s
+
+is_alnum_str.o: is_alnum_str.c.o
+
+.PHONY : is_alnum_str.o
+
+# target to build an object file
+is_alnum_str.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_alnum_str.c.o
+.PHONY : is_alnum_str.c.o
+
+is_alnum_str.i: is_alnum_str.c.i
+
+.PHONY : is_alnum_str.i
+
+# target to preprocess a source file
+is_alnum_str.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_alnum_str.c.i
+.PHONY : is_alnum_str.c.i
+
+is_alnum_str.s: is_alnum_str.c.s
+
+.PHONY : is_alnum_str.s
+
+# target to generate assembly for a file
+is_alnum_str.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_alnum_str.c.s
+.PHONY : is_alnum_str.c.s
+
+is_comment.o: is_comment.c.o
+
+.PHONY : is_comment.o
+
+# target to build an object file
+is_comment.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_comment.c.o
+.PHONY : is_comment.c.o
+
+is_comment.i: is_comment.c.i
+
+.PHONY : is_comment.i
+
+# target to preprocess a source file
+is_comment.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_comment.c.i
+.PHONY : is_comment.c.i
+
+is_comment.s: is_comment.c.s
+
+.PHONY : is_comment.s
+
+# target to generate assembly for a file
+is_comment.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_comment.c.s
+.PHONY : is_comment.c.s
+
+is_digit_str.o: is_digit_str.c.o
+
+.PHONY : is_digit_str.o
+
+# target to build an object file
+is_digit_str.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_digit_str.c.o
+.PHONY : is_digit_str.c.o
+
+is_digit_str.i: is_digit_str.c.i
+
+.PHONY : is_digit_str.i
+
+# target to preprocess a source file
+is_digit_str.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_digit_str.c.i
+.PHONY : is_digit_str.c.i
+
+is_digit_str.s: is_digit_str.c.s
+
+.PHONY : is_digit_str.s
+
+# target to generate assembly for a file
+is_digit_str.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_digit_str.c.s
+.PHONY : is_digit_str.c.s
+
+is_end.o: is_end.c.o
+
+.PHONY : is_end.o
+
+# target to build an object file
+is_end.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_end.c.o
+.PHONY : is_end.c.o
+
+is_end.i: is_end.c.i
+
+.PHONY : is_end.i
+
+# target to preprocess a source file
+is_end.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_end.c.i
+.PHONY : is_end.c.i
+
+is_end.s: is_end.c.s
+
+.PHONY : is_end.s
+
+# target to generate assembly for a file
+is_end.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_end.c.s
+.PHONY : is_end.c.s
+
+is_link.o: is_link.c.o
+
+.PHONY : is_link.o
+
+# target to build an object file
+is_link.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_link.c.o
+.PHONY : is_link.c.o
+
+is_link.i: is_link.c.i
+
+.PHONY : is_link.i
+
+# target to preprocess a source file
+is_link.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_link.c.i
+.PHONY : is_link.c.i
+
+is_link.s: is_link.c.s
+
+.PHONY : is_link.s
+
+# target to generate assembly for a file
+is_link.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_link.c.s
+.PHONY : is_link.c.s
+
+is_room.o: is_room.c.o
+
+.PHONY : is_room.o
+
+# target to build an object file
+is_room.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_room.c.o
+.PHONY : is_room.c.o
+
+is_room.i: is_room.c.i
+
+.PHONY : is_room.i
+
+# target to preprocess a source file
+is_room.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_room.c.i
+.PHONY : is_room.c.i
+
+is_room.s: is_room.c.s
+
+.PHONY : is_room.s
+
+# target to generate assembly for a file
+is_room.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_room.c.s
+.PHONY : is_room.c.s
+
+is_start.o: is_start.c.o
+
+.PHONY : is_start.o
+
+# target to build an object file
+is_start.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_start.c.o
+.PHONY : is_start.c.o
+
+is_start.i: is_start.c.i
+
+.PHONY : is_start.i
+
+# target to preprocess a source file
+is_start.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_start.c.i
+.PHONY : is_start.c.i
+
+is_start.s: is_start.c.s
+
+.PHONY : is_start.s
+
+# target to generate assembly for a file
+is_start.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_start.c.s
+.PHONY : is_start.c.s
+
+is_visited.o: is_visited.c.o
+
+.PHONY : is_visited.o
+
+# target to build an object file
+is_visited.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_visited.c.o
+.PHONY : is_visited.c.o
+
+is_visited.i: is_visited.c.i
+
+.PHONY : is_visited.i
+
+# target to preprocess a source file
+is_visited.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_visited.c.i
+.PHONY : is_visited.c.i
+
+is_visited.s: is_visited.c.s
+
+.PHONY : is_visited.s
+
+# target to generate assembly for a file
+is_visited.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/is_visited.c.s
+.PHONY : is_visited.c.s
+
+last_q_static.o: last_q_static.c.o
+
+.PHONY : last_q_static.o
+
+# target to build an object file
+last_q_static.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/last_q_static.c.o
+.PHONY : last_q_static.c.o
+
+last_q_static.i: last_q_static.c.i
+
+.PHONY : last_q_static.i
+
+# target to preprocess a source file
+last_q_static.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/last_q_static.c.i
+.PHONY : last_q_static.c.i
+
+last_q_static.s: last_q_static.c.s
+
+.PHONY : last_q_static.s
+
+# target to generate assembly for a file
+last_q_static.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/last_q_static.c.s
+.PHONY : last_q_static.c.s
+
+last_v.o: last_v.c.o
+
+.PHONY : last_v.o
+
+# target to build an object file
+last_v.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/last_v.c.o
+.PHONY : last_v.c.o
+
+last_v.i: last_v.c.i
+
+.PHONY : last_v.i
+
+# target to preprocess a source file
+last_v.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/last_v.c.i
+.PHONY : last_v.c.i
+
+last_v.s: last_v.c.s
+
+.PHONY : last_v.s
+
+# target to generate assembly for a file
+last_v.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/last_v.c.s
+.PHONY : last_v.c.s
 
 main.o: main.c.o
 
@@ -771,59 +1581,329 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/main.c.s
 .PHONY : main.c.s
 
-print.o: print.c.o
+muravei_idi.o: muravei_idi.c.o
 
-.PHONY : print.o
-
-# target to build an object file
-print.c.o:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print.c.o
-.PHONY : print.c.o
-
-print.i: print.c.i
-
-.PHONY : print.i
-
-# target to preprocess a source file
-print.c.i:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print.c.i
-.PHONY : print.c.i
-
-print.s: print.c.s
-
-.PHONY : print.s
-
-# target to generate assembly for a file
-print.c.s:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print.c.s
-.PHONY : print.c.s
-
-skip.o: skip.c.o
-
-.PHONY : skip.o
+.PHONY : muravei_idi.o
 
 # target to build an object file
-skip.c.o:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/skip.c.o
-.PHONY : skip.c.o
+muravei_idi.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/muravei_idi.c.o
+.PHONY : muravei_idi.c.o
 
-skip.i: skip.c.i
+muravei_idi.i: muravei_idi.c.i
 
-.PHONY : skip.i
+.PHONY : muravei_idi.i
 
 # target to preprocess a source file
-skip.c.i:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/skip.c.i
-.PHONY : skip.c.i
+muravei_idi.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/muravei_idi.c.i
+.PHONY : muravei_idi.c.i
 
-skip.s: skip.c.s
+muravei_idi.s: muravei_idi.c.s
 
-.PHONY : skip.s
+.PHONY : muravei_idi.s
 
 # target to generate assembly for a file
-skip.c.s:
-	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/skip.c.s
-.PHONY : skip.c.s
+muravei_idi.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/muravei_idi.c.s
+.PHONY : muravei_idi.c.s
+
+print_results.o: print_results.c.o
+
+.PHONY : print_results.o
+
+# target to build an object file
+print_results.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print_results.c.o
+.PHONY : print_results.c.o
+
+print_results.i: print_results.c.i
+
+.PHONY : print_results.i
+
+# target to preprocess a source file
+print_results.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print_results.c.i
+.PHONY : print_results.c.i
+
+print_results.s: print_results.c.s
+
+.PHONY : print_results.s
+
+# target to generate assembly for a file
+print_results.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/print_results.c.s
+.PHONY : print_results.c.s
+
+queue_visit_alloc.o: queue_visit_alloc.c.o
+
+.PHONY : queue_visit_alloc.o
+
+# target to build an object file
+queue_visit_alloc.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/queue_visit_alloc.c.o
+.PHONY : queue_visit_alloc.c.o
+
+queue_visit_alloc.i: queue_visit_alloc.c.i
+
+.PHONY : queue_visit_alloc.i
+
+# target to preprocess a source file
+queue_visit_alloc.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/queue_visit_alloc.c.i
+.PHONY : queue_visit_alloc.c.i
+
+queue_visit_alloc.s: queue_visit_alloc.c.s
+
+.PHONY : queue_visit_alloc.s
+
+# target to generate assembly for a file
+queue_visit_alloc.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/queue_visit_alloc.c.s
+.PHONY : queue_visit_alloc.c.s
+
+recursion.o: recursion.c.o
+
+.PHONY : recursion.o
+
+# target to build an object file
+recursion.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/recursion.c.o
+.PHONY : recursion.c.o
+
+recursion.i: recursion.c.i
+
+.PHONY : recursion.i
+
+# target to preprocess a source file
+recursion.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/recursion.c.i
+.PHONY : recursion.c.i
+
+recursion.s: recursion.c.s
+
+.PHONY : recursion.s
+
+# target to generate assembly for a file
+recursion.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/recursion.c.s
+.PHONY : recursion.c.s
+
+sort_ways.o: sort_ways.c.o
+
+.PHONY : sort_ways.o
+
+# target to build an object file
+sort_ways.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/sort_ways.c.o
+.PHONY : sort_ways.c.o
+
+sort_ways.i: sort_ways.c.i
+
+.PHONY : sort_ways.i
+
+# target to preprocess a source file
+sort_ways.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/sort_ways.c.i
+.PHONY : sort_ways.c.i
+
+sort_ways.s: sort_ways.c.s
+
+.PHONY : sort_ways.s
+
+# target to generate assembly for a file
+sort_ways.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/sort_ways.c.s
+.PHONY : sort_ways.c.s
+
+struct_int.o: struct_int.c.o
+
+.PHONY : struct_int.o
+
+# target to build an object file
+struct_int.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/struct_int.c.o
+.PHONY : struct_int.c.o
+
+struct_int.i: struct_int.c.i
+
+.PHONY : struct_int.i
+
+# target to preprocess a source file
+struct_int.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/struct_int.c.i
+.PHONY : struct_int.c.i
+
+struct_int.s: struct_int.c.s
+
+.PHONY : struct_int.s
+
+# target to generate assembly for a file
+struct_int.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/struct_int.c.s
+.PHONY : struct_int.c.s
+
+swap_nodes.o: swap_nodes.c.o
+
+.PHONY : swap_nodes.o
+
+# target to build an object file
+swap_nodes.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_nodes.c.o
+.PHONY : swap_nodes.c.o
+
+swap_nodes.i: swap_nodes.c.i
+
+.PHONY : swap_nodes.i
+
+# target to preprocess a source file
+swap_nodes.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_nodes.c.i
+.PHONY : swap_nodes.c.i
+
+swap_nodes.s: swap_nodes.c.s
+
+.PHONY : swap_nodes.s
+
+# target to generate assembly for a file
+swap_nodes.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_nodes.c.s
+.PHONY : swap_nodes.c.s
+
+swap_rooms.o: swap_rooms.c.o
+
+.PHONY : swap_rooms.o
+
+# target to build an object file
+swap_rooms.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_rooms.c.o
+.PHONY : swap_rooms.c.o
+
+swap_rooms.i: swap_rooms.c.i
+
+.PHONY : swap_rooms.i
+
+# target to preprocess a source file
+swap_rooms.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_rooms.c.i
+.PHONY : swap_rooms.c.i
+
+swap_rooms.s: swap_rooms.c.s
+
+.PHONY : swap_rooms.s
+
+# target to generate assembly for a file
+swap_rooms.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_rooms.c.s
+.PHONY : swap_rooms.c.s
+
+swap_start_end.o: swap_start_end.c.o
+
+.PHONY : swap_start_end.o
+
+# target to build an object file
+swap_start_end.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_start_end.c.o
+.PHONY : swap_start_end.c.o
+
+swap_start_end.i: swap_start_end.c.i
+
+.PHONY : swap_start_end.i
+
+# target to preprocess a source file
+swap_start_end.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_start_end.c.i
+.PHONY : swap_start_end.c.i
+
+swap_start_end.s: swap_start_end.c.s
+
+.PHONY : swap_start_end.s
+
+# target to generate assembly for a file
+swap_start_end.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/swap_start_end.c.s
+.PHONY : swap_start_end.c.s
+
+valid_link.o: valid_link.c.o
+
+.PHONY : valid_link.o
+
+# target to build an object file
+valid_link.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/valid_link.c.o
+.PHONY : valid_link.c.o
+
+valid_link.i: valid_link.c.i
+
+.PHONY : valid_link.i
+
+# target to preprocess a source file
+valid_link.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/valid_link.c.i
+.PHONY : valid_link.c.i
+
+valid_link.s: valid_link.c.s
+
+.PHONY : valid_link.s
+
+# target to generate assembly for a file
+valid_link.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/valid_link.c.s
+.PHONY : valid_link.c.s
+
+valid_room.o: valid_room.c.o
+
+.PHONY : valid_room.o
+
+# target to build an object file
+valid_room.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/valid_room.c.o
+.PHONY : valid_room.c.o
+
+valid_room.i: valid_room.c.i
+
+.PHONY : valid_room.i
+
+# target to preprocess a source file
+valid_room.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/valid_room.c.i
+.PHONY : valid_room.c.i
+
+valid_room.s: valid_room.c.s
+
+.PHONY : valid_room.s
+
+# target to generate assembly for a file
+valid_room.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/valid_room.c.s
+.PHONY : valid_room.c.s
+
+visited_arr.o: visited_arr.c.o
+
+.PHONY : visited_arr.o
+
+# target to build an object file
+visited_arr.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/visited_arr.c.o
+.PHONY : visited_arr.c.o
+
+visited_arr.i: visited_arr.c.i
+
+.PHONY : visited_arr.i
+
+# target to preprocess a source file
+visited_arr.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/visited_arr.c.i
+.PHONY : visited_arr.c.i
+
+visited_arr.s: visited_arr.c.s
+
+.PHONY : visited_arr.s
+
+# target to generate assembly for a file
+visited_arr.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/visited_arr.c.s
+.PHONY : visited_arr.c.s
 
 # Help Target
 help:
@@ -834,9 +1914,57 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LEM_IN"
+	@echo "... add_link.o"
+	@echo "... add_link.i"
+	@echo "... add_link.s"
+	@echo "... add_q_static.o"
+	@echo "... add_q_static.i"
+	@echo "... add_q_static.s"
+	@echo "... add_room.o"
+	@echo "... add_room.i"
+	@echo "... add_room.s"
+	@echo "... add_visited_static.o"
+	@echo "... add_visited_static.i"
+	@echo "... add_visited_static.s"
+	@echo "... add_way.o"
+	@echo "... add_way.i"
+	@echo "... add_way.s"
+	@echo "... ant_number.o"
+	@echo "... ant_number.i"
+	@echo "... ant_number.s"
+	@echo "... count_char.o"
+	@echo "... count_char.i"
+	@echo "... count_char.s"
+	@echo "... create_first_way.o"
+	@echo "... create_first_way.i"
+	@echo "... create_first_way.s"
+	@echo "... create_matrix.o"
+	@echo "... create_matrix.i"
+	@echo "... create_matrix.s"
+	@echo "... create_room_list.o"
+	@echo "... create_room_list.i"
+	@echo "... create_room_list.s"
+	@echo "... del_last_visited.o"
+	@echo "... del_last_visited.i"
+	@echo "... del_last_visited.s"
+	@echo "... del_q_static.o"
+	@echo "... del_q_static.i"
+	@echo "... del_q_static.s"
+	@echo "... dfs.o"
+	@echo "... dfs.i"
+	@echo "... dfs.s"
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"
+	@echo "... find_id.o"
+	@echo "... find_id.i"
+	@echo "... find_id.s"
+	@echo "... find_room.o"
+	@echo "... find_room.i"
+	@echo "... find_room.s"
+	@echo "... find_room_by_id.o"
+	@echo "... find_room_by_id.i"
+	@echo "... find_room_by_id.s"
 	@echo "... ft_atoi.o"
 	@echo "... ft_atoi.i"
 	@echo "... ft_atoi.s"
@@ -849,6 +1977,9 @@ help:
 	@echo "... ft_countw.o"
 	@echo "... ft_countw.i"
 	@echo "... ft_countw.s"
+	@echo "... ft_delete_path.o"
+	@echo "... ft_delete_path.i"
+	@echo "... ft_delete_path.s"
 	@echo "... ft_isalnum.o"
 	@echo "... ft_isalnum.i"
 	@echo "... ft_isalnum.s"
@@ -864,6 +1995,15 @@ help:
 	@echo "... ft_putstr.o"
 	@echo "... ft_putstr.i"
 	@echo "... ft_putstr.s"
+	@echo "... ft_remove_redundant_path.o"
+	@echo "... ft_remove_redundant_path.i"
+	@echo "... ft_remove_redundant_path.s"
+	@echo "... ft_room_in_path.o"
+	@echo "... ft_room_in_path.i"
+	@echo "... ft_room_in_path.s"
+	@echo "... ft_room_position.o"
+	@echo "... ft_room_position.i"
+	@echo "... ft_room_position.s"
 	@echo "... ft_strcat.o"
 	@echo "... ft_strcat.i"
 	@echo "... ft_strcat.s"
@@ -900,18 +2040,78 @@ help:
 	@echo "... get_next_line.o"
 	@echo "... get_next_line.i"
 	@echo "... get_next_line.s"
-	@echo "... list.o"
-	@echo "... list.i"
-	@echo "... list.s"
+	@echo "... get_room_by_ant_id.o"
+	@echo "... get_room_by_ant_id.i"
+	@echo "... get_room_by_ant_id.s"
+	@echo "... is_alnum_str.o"
+	@echo "... is_alnum_str.i"
+	@echo "... is_alnum_str.s"
+	@echo "... is_comment.o"
+	@echo "... is_comment.i"
+	@echo "... is_comment.s"
+	@echo "... is_digit_str.o"
+	@echo "... is_digit_str.i"
+	@echo "... is_digit_str.s"
+	@echo "... is_end.o"
+	@echo "... is_end.i"
+	@echo "... is_end.s"
+	@echo "... is_link.o"
+	@echo "... is_link.i"
+	@echo "... is_link.s"
+	@echo "... is_room.o"
+	@echo "... is_room.i"
+	@echo "... is_room.s"
+	@echo "... is_start.o"
+	@echo "... is_start.i"
+	@echo "... is_start.s"
+	@echo "... is_visited.o"
+	@echo "... is_visited.i"
+	@echo "... is_visited.s"
+	@echo "... last_q_static.o"
+	@echo "... last_q_static.i"
+	@echo "... last_q_static.s"
+	@echo "... last_v.o"
+	@echo "... last_v.i"
+	@echo "... last_v.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... print.o"
-	@echo "... print.i"
-	@echo "... print.s"
-	@echo "... skip.o"
-	@echo "... skip.i"
-	@echo "... skip.s"
+	@echo "... muravei_idi.o"
+	@echo "... muravei_idi.i"
+	@echo "... muravei_idi.s"
+	@echo "... print_results.o"
+	@echo "... print_results.i"
+	@echo "... print_results.s"
+	@echo "... queue_visit_alloc.o"
+	@echo "... queue_visit_alloc.i"
+	@echo "... queue_visit_alloc.s"
+	@echo "... recursion.o"
+	@echo "... recursion.i"
+	@echo "... recursion.s"
+	@echo "... sort_ways.o"
+	@echo "... sort_ways.i"
+	@echo "... sort_ways.s"
+	@echo "... struct_int.o"
+	@echo "... struct_int.i"
+	@echo "... struct_int.s"
+	@echo "... swap_nodes.o"
+	@echo "... swap_nodes.i"
+	@echo "... swap_nodes.s"
+	@echo "... swap_rooms.o"
+	@echo "... swap_rooms.i"
+	@echo "... swap_rooms.s"
+	@echo "... swap_start_end.o"
+	@echo "... swap_start_end.i"
+	@echo "... swap_start_end.s"
+	@echo "... valid_link.o"
+	@echo "... valid_link.i"
+	@echo "... valid_link.s"
+	@echo "... valid_room.o"
+	@echo "... valid_room.i"
+	@echo "... valid_room.s"
+	@echo "... visited_arr.o"
+	@echo "... visited_arr.i"
+	@echo "... visited_arr.s"
 .PHONY : help
 
 

@@ -24,11 +24,11 @@ char	*ft_strchr(const char *s, int c)
 		return (str);
 	}
 	if (str)
-	while (*str)
-	{
-		if (*str == (char)c)
-			return (str);
-		str++;
-	}
+		while (*str)
+		{
+			if (*str == (char)c)
+				return (str);
+			str++;
+		}
 	return (NULL);
 }

@@ -6,14 +6,14 @@
 /*   By: ioleksiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 15:05:23 by ioleksiu          #+#    #+#             */
-/*   Updated: 2017/07/10 15:05:24 by ioleksiu         ###   ########.fr       */
+/*   Updated: 2017/08/15 20:11:05 by ioleksiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-void ft_error(void)
+void		ft_error(void)
 {
-    write(1,"ERROR\n", 6);
-    exit(777);
+	write(1, "ERROR\n", 6);
+	exit(777);
 }

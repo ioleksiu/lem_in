@@ -22,6 +22,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/LEM_IN.dir/ft_strdup.c.o"
   "CMakeFiles/LEM_IN.dir/ft_atoi.c.o"
   "CMakeFiles/LEM_IN.dir/ft_strcmp.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_putnbr.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_putchar.c.o"
+  "CMakeFiles/LEM_IN.dir/ft_putstr.c.o"
   "LEM_IN.pdb"
   "LEM_IN"
 )

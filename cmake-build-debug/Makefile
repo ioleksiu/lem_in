@@ -312,6 +312,87 @@ ft_isdigit.c.s:
 	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_isdigit.c.s
 .PHONY : ft_isdigit.c.s
 
+ft_putchar.o: ft_putchar.c.o
+
+.PHONY : ft_putchar.o
+
+# target to build an object file
+ft_putchar.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putchar.c.o
+.PHONY : ft_putchar.c.o
+
+ft_putchar.i: ft_putchar.c.i
+
+.PHONY : ft_putchar.i
+
+# target to preprocess a source file
+ft_putchar.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putchar.c.i
+.PHONY : ft_putchar.c.i
+
+ft_putchar.s: ft_putchar.c.s
+
+.PHONY : ft_putchar.s
+
+# target to generate assembly for a file
+ft_putchar.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putchar.c.s
+.PHONY : ft_putchar.c.s
+
+ft_putnbr.o: ft_putnbr.c.o
+
+.PHONY : ft_putnbr.o
+
+# target to build an object file
+ft_putnbr.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putnbr.c.o
+.PHONY : ft_putnbr.c.o
+
+ft_putnbr.i: ft_putnbr.c.i
+
+.PHONY : ft_putnbr.i
+
+# target to preprocess a source file
+ft_putnbr.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putnbr.c.i
+.PHONY : ft_putnbr.c.i
+
+ft_putnbr.s: ft_putnbr.c.s
+
+.PHONY : ft_putnbr.s
+
+# target to generate assembly for a file
+ft_putnbr.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putnbr.c.s
+.PHONY : ft_putnbr.c.s
+
+ft_putstr.o: ft_putstr.c.o
+
+.PHONY : ft_putstr.o
+
+# target to build an object file
+ft_putstr.c.o:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putstr.c.o
+.PHONY : ft_putstr.c.o
+
+ft_putstr.i: ft_putstr.c.i
+
+.PHONY : ft_putstr.i
+
+# target to preprocess a source file
+ft_putstr.c.i:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putstr.c.i
+.PHONY : ft_putstr.c.i
+
+ft_putstr.s: ft_putstr.c.s
+
+.PHONY : ft_putstr.s
+
+# target to generate assembly for a file
+ft_putstr.c.s:
+	$(MAKE) -f CMakeFiles/LEM_IN.dir/build.make CMakeFiles/LEM_IN.dir/ft_putstr.c.s
+.PHONY : ft_putstr.c.s
+
 ft_strcat.o: ft_strcat.c.o
 
 .PHONY : ft_strcat.o
@@ -774,6 +855,15 @@ help:
 	@echo "... ft_isdigit.o"
 	@echo "... ft_isdigit.i"
 	@echo "... ft_isdigit.s"
+	@echo "... ft_putchar.o"
+	@echo "... ft_putchar.i"
+	@echo "... ft_putchar.s"
+	@echo "... ft_putnbr.o"
+	@echo "... ft_putnbr.i"
+	@echo "... ft_putnbr.s"
+	@echo "... ft_putstr.o"
+	@echo "... ft_putstr.i"
+	@echo "... ft_putstr.s"
 	@echo "... ft_strcat.o"
 	@echo "... ft_strcat.i"
 	@echo "... ft_strcat.s"

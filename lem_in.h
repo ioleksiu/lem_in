@@ -21,46 +21,6 @@
 # include <stdio.h>
 #include <unistd.h>
 
-/*
- * 	int *ants;
- *
- * 	ants = (int *)malloc(sizeof(int) * lem->ant_num);
- * 	every element in ants is set to 1;
- *
- * 	uintmax_t init_ants;
- *
- * 	init_ants = lem->ant_num;
- *
- *  while (lem->ant_num != 0)
- *  {
- *  	int i = 0;
- *  	while (i < init_ants)
- *  	{
- *  		if (ants[i] == 1)
- *  		{
- *  			// make a step for this ant;
- *  			index_of_ant = i + 1;
- *  			search ant in the set of rooms;
- *  			// go through the list of rooms;
- *  			// if it is present in some room - return the pointer to this room;
- *  			// else - return pointer to the head of the list of rooms;
- *  			you have an ID of room where the ant is;
- *  			while (path)
- *  			{
- *  				index_of_room_in_path;
- *  				check_next_room_in_this_path;
- *  				if (empty_room)
- *  					in this room active_lem = index_of_ant;
- *  					in prev_room active_lem = 0;
- *  				path = path->next;
- *  			}
- *  		}
- *  		i++;
- *  	}
- *  }
- *
- */
-
 typedef struct          s_rooms
 {
     char                *r_name;
@@ -114,17 +74,11 @@ typedef struct          s_lemin
     int                 is_start;
     int                 is_end;
     int                 command;
-    int                 *link_num;
     int                 way_num;
-    int                 *queue;// n * n
-    int                 *visited;//n
+    int                 *queue;
+    int                 *visited;
     t_ways              *ways;
     char                *input;
-    int                 **uncrossible;
-    t_rooms             **ways_to_go;
-    //struct  s_way_links *way_links;
-//    t_sat_paths         *set_paths;
-    //
 }                       t_lemin;
 
 
@@ -156,5 +110,11 @@ int	                ft_isdigit(int c);
 int					ft_atoi(const char *str);
 char	            *ft_strdup(const char *s1);
 int					ft_strcmp(const char *s1, const char *s2);
+void				ft_putnbr(int n);
+void				ft_putchar(char c);
+void				ft_putstr(char const *s);
+void           	 	swap_start_end(t_rooms *rooms, t_lemin *lem);
+int             	count_char(char *str, char c);
+int             	is_digit_str(char *str);
 
 #endif

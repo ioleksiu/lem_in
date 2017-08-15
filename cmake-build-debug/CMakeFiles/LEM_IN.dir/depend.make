@@ -18,6 +18,14 @@ CMakeFiles/LEM_IN.dir/ft_isalnum.c.o: ../ft_isalnum.c
 
 CMakeFiles/LEM_IN.dir/ft_isdigit.c.o: ../ft_isdigit.c
 
+CMakeFiles/LEM_IN.dir/ft_putchar.c.o: ../ft_putchar.c
+
+CMakeFiles/LEM_IN.dir/ft_putnbr.c.o: ../ft_putnbr.c
+CMakeFiles/LEM_IN.dir/ft_putnbr.c.o: ../lem_in.h
+
+CMakeFiles/LEM_IN.dir/ft_putstr.c.o: ../ft_putstr.c
+CMakeFiles/LEM_IN.dir/ft_putstr.c.o: ../lem_in.h
+
 CMakeFiles/LEM_IN.dir/ft_strcat.c.o: ../ft_strcat.c
 
 CMakeFiles/LEM_IN.dir/ft_strchr.c.o: ../ft_strchr.c

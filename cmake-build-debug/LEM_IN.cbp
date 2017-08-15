@@ -103,6 +103,15 @@
 		<Unit filename="/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_isdigit.c">
 			<Option target="LEM_IN"/>
 		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_putchar.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_putnbr.c">
+			<Option target="LEM_IN"/>
+		</Unit>
+		<Unit filename="/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_putstr.c">
+			<Option target="LEM_IN"/>
+		</Unit>
 		<Unit filename="/nfs/2016/i/ioleksiu/Applications/Clion/LEM_IN/ft_strcat.c">
 			<Option target="LEM_IN"/>
 		</Unit>

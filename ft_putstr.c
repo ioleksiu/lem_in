@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "lem_in.h"
-#include <unistd.h>
 
 void	ft_putstr(char const *s)
 {

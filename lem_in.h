@@ -14,12 +14,7 @@
 # define LEM_IN_H
 # define BUFF_SIZE 30
 # include <stdlib.h>
-# include <fcntl.h>
-# include <sys/stat.h>
-# include <sys/types.h>
-# include <sys/uio.h>
-# include <stdio.h>
-#include <unistd.h>
+# include <unistd.h>
 
 typedef struct          s_rooms
 {
@@ -63,6 +58,9 @@ typedef struct          s_lemin
     int                 *visited;
     t_ways              *ways;
     char                *input;
+	int					*is_ant_finished;
+	int					pos;
+	int					i;
 }                       t_lemin;
 
 
@@ -129,7 +127,7 @@ void            create_fist_way(t_lemin *lem);
 void            add_way(t_lemin *lem);
 void            dfs(t_lemin *lem);
 void        	queue_visit_alloc(t_lemin *lem);
-void			recursion(t_lemin *lem);
+void			find_ways_and_push_ants(t_lemin *lem, t_rooms *rooms);
 void        	swap_nodes(t_ways *a, t_ways *b);
 void        	sort_ways(t_lemin *lem);
 void			print_input(t_lemin *lem);

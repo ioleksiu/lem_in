@@ -36,8 +36,6 @@ int				main(void)
 	ants_number(lem);
 	while (get_next_line(0, &str) && join_input(lem, str))
 	{
-		if (ft_strequ(str, "stop"))
-			break ;
 		if (is_comment(str))
 			free(str);
 		else if (is_room(str, rooms, lem))
@@ -51,10 +49,7 @@ int				main(void)
 		else
 			ft_error();
 	}
-	(!lem->is_end || !lem->is_start) ? ft_error() : print_input(lem);
-	recursion(lem);
-	sort_ways(lem);
-	ft_remove_redundant_path(lem);
-	muravei_idi(lem, rooms);
+	(!lem->is_end || !lem->is_start) ? ft_error() : 0;
+	find_ways_and_push_ants(lem, rooms);
 	return (0);
 }

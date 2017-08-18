@@ -12,6 +12,19 @@
 
 #include "lem_in.h"
 
+void	ft_free_arr(char **split)
+{
+	int i;
+
+	i = 0;
+	while (split[i])
+	{
+		free(split[i]);
+		i++;
+	}
+	free(split);
+}
+
 t_rooms		*add_room(char *str, t_rooms *rooms, t_lemin *lem, int flag)
 {
 	t_rooms	*temp;
@@ -26,7 +39,7 @@ t_rooms		*add_room(char *str, t_rooms *rooms, t_lemin *lem, int flag)
 	while (temp->next && id++)
 		temp = temp->next;
 	temp->next = (t_rooms *)malloc(sizeof(t_rooms));
-	temp->next->r_name = arr[0];
+	temp->next->r_name = ft_strdup(arr[0]);
 	temp->next->x = ft_atoi(arr[1]);
 	temp->next->y = ft_atoi(arr[2]);
 	temp->next->id = id;
@@ -34,7 +47,7 @@ t_rooms		*add_room(char *str, t_rooms *rooms, t_lemin *lem, int flag)
 	lem->start_id = (flag == 1) ? id : lem->start_id;
 	lem->end_id = (flag == 2) ? id : lem->end_id;
 	lem->room_num = id + 1;
-	free(str);
+	ft_free_arr(arr);
 	temp->ant_num = -1;
 	return (rooms);
 }

@@ -6,16 +6,33 @@
 /*   By: ioleksiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/15 21:03:07 by ioleksiu          #+#    #+#             */
-/*   Updated: 2017/08/15 21:03:17 by ioleksiu         ###   ########.fr       */
+/*   Updated: 2017/08/16 16:43:31 by ioleksiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
+void		join(t_lemin *lem, char *str2)
+{
+	char	*res;
+	char	*temp;
+	int		sum;
+
+	sum = (int)(2 + ft_strlen(lem->input) + ft_strlen(str2));
+	temp = lem->input;
+	res = (char *)malloc(sum * sizeof(char));
+	ft_strcpy(res, lem->input);
+	ft_strcat(res, str2);
+	ft_strcat(res, "\n");
+	free(temp);
+	lem->input = res;
+}
+
 int				join_input(t_lemin *lem, char *s)
 {
-	lem->input = ft_strjoin(lem->input, s);
-	lem->input = ft_strjoin(lem->input, "\n");
+	// lem->input = join(lem->input, s);
+	// lem->input = join(lem->input, "\n");
+	join(lem, s);
 	return (1);
 }
 
@@ -47,9 +64,10 @@ int				main(void)
 		else if (is_link(str))
 			lem = add_link(lem, rooms, str);
 		else
-			ft_error();
+			ft_error(); 
 	}
-	(!lem->is_end || !lem->is_start) ? ft_error() : 0;
-	find_ways_and_push_ants(lem, rooms);
+	//(!lem->is_end || !lem->is_start) ? ft_error() : 0;
+	//find_ways_and_push_ants(lem, rooms);
+	kill(getpid(), SIGSTOP);
 	return (0);
 }

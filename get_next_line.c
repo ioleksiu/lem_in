@@ -12,80 +12,61 @@
 
 #include "lem_in.h"
 
-t_get			*ft_list_create(int fd)
+static t_list	*ft_find_fd(t_list **head, int fd)
 {
-	t_get		*a;
+	t_list		*temp;
 
-	a = (t_get*)malloc(sizeof(t_get));
-	a->fd = fd;
-	a->rest = ft_strnew(0);
-	a->next = (NULL);
-	return (a);
+	if ((temp = *head))
+	{
+		while (temp)
+		{
+			if (fd == (int)temp->content_size)
+				return (temp);
+			temp = temp->next;
+		}
+	}
+	temp = ft_lstnew("\0", 1);
+	temp->content_size = fd;
+	ft_lstadd(head, temp);
+	return (temp);
 }
 
-void			ft_list_add(t_get *a, int fd)
+char			*ft_join_rf(char *temp, char *buf, int len_rf)
 {
-	t_get		*b;
+	char	*del_temp;
+	char	*str;
 
-	b = (t_get*)malloc(sizeof(t_get));
-	a->next = b;
-	b->fd = fd;
-	b->next = (NULL);
-	b->rest = ft_strnew(1);
+	del_temp = temp;
+	str = ft_strnew(ft_strlen(temp) + len_rf);
+	ft_strcpy(str, temp);
+	ft_strncpy(str + ft_strlen(str), buf, len_rf);
+	if (del_temp)
+		free(del_temp);
+	return (str);
 }
 
-t_get			*ft_find_fd(int fd, t_get *lst)
+int				get_next_line(int const fd, char **line)
 {
-	while (lst != NULL && lst->fd != fd)
-		lst = lst->next;
-	return (lst);
-}
+	char			buf[BUFF_SIZE + 1];
+	char			*del_content;
+	static t_list	*head = NULL;
+	t_list			*item;
+	int				rf;
 
-char			*clean_line_before_nl(t_get *lst)
-{
-	char		*s;
-	int			len;
-	char		*temp;
-	char		*priva;
-	char		c;
-
-	s = lst->rest;
-	if (ft_strchr(s, '\n') != NULL)
-		c = '\n';
-	else
-		c = '\0';
-	len = ft_strchr(s, c) - s;
-	priva = ft_strnew(len);
-	priva = ft_strncpy(priva, s, len);
-	temp = ft_strchr(s, c);
-	lst->rest = ++temp;
-	return (priva);
-}
-
-int				get_next_line(const int fd, char **line)
-{
-	static t_get	*a;
-	t_get			*temp;
-	char			*tmp;
-	ssize_t			res;
-
-	tmp = ft_strnew(BUFF_SIZE);
-	if (fd < 0 || !line || (res = read(fd, NULL, 0)) < 0)
+	if (fd < 0 || line == NULL || read(fd, buf, 0) < 0)
 		return (-1);
-	!a ? a = ft_list_create(fd) : 0;
-	if (a && ft_find_fd(fd, a) == NULL)
-		ft_list_add(a, fd);
-	temp = ft_find_fd(fd, a);
-	if (temp->rest == '\0' || ft_strchr(temp->rest, '\n') == NULL)
-		while (ft_strchr(temp->rest, '\n') == NULL
-	&& (res = (size_t)read(fd, tmp, BUFF_SIZE)) != 0)
-			if (temp->rest != NULL)
-			{
-				temp->rest = ft_strjoin(temp->rest, tmp);
-				ft_bzero(tmp, BUFF_SIZE);
-			}
-	if (!res && temp->rest[0] == '\0')
-		return (0);
-	*line = clean_line_before_nl(temp);
-	return (1);
+	item = ft_find_fd(&head, fd);
+	while (!ft_strchr(item->content, '\n') && (rf = read(fd, buf, BUFF_SIZE)))
+		item->content = ft_join_rf(item->content, buf, rf);
+	rf = 0;
+	while (((char *)item->content)[rf] && ((char *)item->content)[rf] != '\n')
+		rf++;
+	del_content = item->content;
+	*line = ft_strncpy(ft_strnew(rf), item->content, rf);
+	if (((char *)item->content)[rf] == '\n')
+		rf++;
+	item->content = ft_strdup(item->content + rf);
+	free(del_content);
+	return (rf ? 1 : 0);
 }
+

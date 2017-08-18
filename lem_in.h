@@ -12,9 +12,24 @@
 
 #ifndef LEM_IN_H
 # define LEM_IN_H
-# define BUFF_SIZE 30
+# define BUFF_SIZE 3
 # include <stdlib.h>
 # include <unistd.h>
+# include <signal.h>
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
+
+typedef struct		s_gnl
+{
+	char			*temp;
+	int				fd;
+	struct s_gnl	*next;
+}					t_gnl;
 
 typedef struct	s_rooms
 {
@@ -25,13 +40,6 @@ typedef struct	s_rooms
 	int				ant_num;
 	struct s_rooms	*next;
 }				t_rooms;
-
-typedef struct	s_get
-{
-	char			*rest;
-	int				fd;
-	struct s_get	*next;
-}				t_get;
 
 typedef struct	s_ways
 {
@@ -58,7 +66,7 @@ typedef struct	s_lemin
 	int		*visited;
 	t_ways	*ways;
 	char	*input;
-	int		is_ant_finished;
+	int		*is_ant_finished;
 	int		pos;
 	int		i;
 }				t_lemin;
@@ -135,5 +143,10 @@ int				ft_room_position(int *way, int size, int room);
 void			print_results(int d, char *s);
 void			muravei_idi(t_lemin *lem, t_rooms *rooms);
 int				valid_room(char *str, t_rooms *a, t_lemin *lem);
+void 			free_all(t_lemin *lem, t_rooms *rooms);
+char			*ft_strcpy(char *dst, const char *src);
+void			ft_lstadd(t_list **alst, t_list *new);
+void			*ft_memmove(void *dst, const void *src, size_t len);
+t_list			*ft_lstnew(void	const *content, size_t content_size);
 
 #endif

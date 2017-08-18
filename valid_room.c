@@ -12,6 +12,19 @@
 
 #include "lem_in.h"
 
+void	free_valid_room(char **arr)
+{
+	int i;
+
+	i = 0;
+	while(arr[i])
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
+}
+
 int		valid_room(char *str, t_rooms *a, t_lemin *lem)
 {
 	char	**arr;
@@ -24,7 +37,11 @@ int		valid_room(char *str, t_rooms *a, t_lemin *lem)
 			if (arr[0][0] != 'L' && arr[1][0] != 'L')
 				if (is_digit_str(arr[1]) && is_digit_str(arr[2]))
 					if (!find_room(arr[0], a))
+					{
+						free_valid_room(arr);
 						return (1);
+					}
 	ft_error();
+	free_valid_room(arr);
 	return (0);
 }

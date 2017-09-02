@@ -16,6 +16,8 @@ void		swap_start_end(t_rooms *rooms, t_lemin *lem)
 {
 	t_rooms	*temp;
 
+	if (lem->is_start == 0 || lem->is_end == 0)
+		ft_error();
 	temp = rooms;
 	if (lem->is_end == 0)
 		ft_error();

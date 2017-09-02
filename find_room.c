@@ -19,12 +19,12 @@ int		find_room(char *room, t_rooms *a)
 	temp = a;
 	if (temp == NULL)
 		return (0);
-	if (!ft_strcmp(temp->r_name, room))
+	if (ft_strequ(temp->r_name, room))
 		return (1);
 	while (temp->next)
 	{
 		temp = temp->next;
-		if (!ft_strcmp(temp->r_name, room))
+		if (ft_strequ(temp->r_name, room))
 			return (1);
 	}
 	return (0);

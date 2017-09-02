@@ -10,14 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char		*ft_strcat(char *s1, const char *s2)
+#include "lem_in.h"
+
+char	*ft_strcat(char *s1, const char *s2)
 {
 	char	*src;
 
 	src = s1;
-	if (s1)
-		while (*s1)
-			s1++;
+	while (*s1)
+		s1++;
 	while (*s2)
 		*(s1++) = *(s2++);
 	*s1 = '\0';

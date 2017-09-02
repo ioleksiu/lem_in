@@ -6,13 +6,14 @@
 /*   By: ioleksiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/15 21:03:07 by ioleksiu          #+#    #+#             */
-/*   Updated: 2017/08/16 16:43:31 by ioleksiu         ###   ########.fr       */
+/*   Updated: 2017/08/15 21:03:17 by ioleksiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
+#include <signal.h>
 
-void		join(t_lemin *lem, char *str2)
+void			join(t_lemin *lem, char *str2)
 {
 	char	*res;
 	char	*temp;
@@ -30,8 +31,6 @@ void		join(t_lemin *lem, char *str2)
 
 int				join_input(t_lemin *lem, char *s)
 {
-	// lem->input = join(lem->input, s);
-	// lem->input = join(lem->input, "\n");
 	join(lem, s);
 	return (1);
 }
@@ -64,10 +63,8 @@ int				main(void)
 		else if (is_link(str))
 			lem = add_link(lem, rooms, str);
 		else
-			ft_error(); 
+			ft_error();
 	}
-	//(!lem->is_end || !lem->is_start) ? ft_error() : 0;
-	//find_ways_and_push_ants(lem, rooms);
-	kill(getpid(), SIGSTOP);
+	find_ways_and_push_ants(lem, rooms);
 	return (0);
 }

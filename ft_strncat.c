@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_alnum_str.c                                     :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ioleksiu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/15 20:44:20 by ioleksiu          #+#    #+#             */
-/*   Updated: 2017/08/15 20:44:22 by ioleksiu         ###   ########.fr       */
+/*   Created: 2016/12/07 21:01:09 by ioleksiu          #+#    #+#             */
+/*   Updated: 2016/12/07 21:08:16 by ioleksiu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "lem_in.h"
+#include <string.h>
 
-int		is_alnum_str(char *str)
+char	*ft_strncat(char *s1, char *s2, size_t n)
 {
-	while (*str)
-		if (!ft_isalnum(*str++))
-			return (0);
-	return (1);
+	char	*src;
+	size_t	i;
+
+	i = 0;
+	src = s1;
+	while (*s1)
+		s1++;
+	while (*s2 && i++ != n)
+		*(s1++) = *(s2++);
+	*s1 = '\0';
+	return (src);
 }

@@ -14,6 +14,8 @@
 
 void		find_ways_and_push_ants(t_lemin *lem, t_rooms *rooms)
 {
+	if (lem->is_link == 0)
+		ft_error();
 	visited_arr(lem);
 	queue_visit_alloc(lem);
 	dfs(lem);
@@ -23,4 +25,5 @@ void		find_ways_and_push_ants(t_lemin *lem, t_rooms *rooms)
 	sort_ways(lem);
 	ft_remove_redundant_path(lem);
 	muravei_idi(lem, rooms);
+	free_all(lem, rooms);
 }

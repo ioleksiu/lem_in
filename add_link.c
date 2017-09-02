@@ -12,19 +12,6 @@
 
 #include "lem_in.h"
 
-void		free_link(char **link)
-{
-	int		i;
-
-	i = 0;
-	while (link[i])
-	{
-		free(link[i]);
-		i++;
-	}
-	free(link);
-}
-
 t_lemin		*add_link(t_lemin *lem, t_rooms *rooms, char *str)
 {
 	char	**link;
@@ -38,8 +25,6 @@ t_lemin		*add_link(t_lemin *lem, t_rooms *rooms, char *str)
 	id[1] = find_id(rooms, link[1]);
 	lem->matrix[id[0]][id[1]] = 1;
 	lem->matrix[id[1]][id[0]] = 1;
-	//free(link);
-	free_link(link);
-	//free(str);
+	free(str);
 	return (lem);
 }

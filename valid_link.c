@@ -12,19 +12,6 @@
 
 #include "lem_in.h"
 
-void		free_valid_link(char **link)
-{
-	int		i;
-
-	i = 0;
-	while (link[i])
-	{
-		free(link[i]);
-		i++;
-	}
-	free(link);
-}
-
 int		valid_link(char *str, t_rooms *a, t_lemin *lem)
 {
 	char	**link;
@@ -38,10 +25,9 @@ int		valid_link(char *str, t_rooms *a, t_lemin *lem)
 			if (find_room(link[0], a) && find_room(link[1], a)
 			&& lem->is_start != 0 && lem->is_end != 0)
 			{
-				free_valid_link(link);
+				free_split(link);
 				return (1);
 			}
 	ft_error();
-	free_valid_link(link);
 	return (0);
 }

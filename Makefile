@@ -6,13 +6,13 @@
 #    By: ioleksiu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/08/16 15:11:09 by ioleksiu          #+#    #+#              #
-#    Updated: 2017/08/16 16:41:56 by ioleksiu         ###   ########.fr        #
+#    Updated: 2017/08/16 15:11:14 by ioleksiu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = lem-in
 
-FLAG = -Wall -Wextra
+FLAG = -Wall -Wextra -Werror
 
 DEL = rm -rf
 
@@ -85,7 +85,11 @@ SRC =	add_link.c \
 		ft_strsplit.c \
 		muravei_idi.c \
 		free.c \
+		ft_lstadd.c \
+		ft_lstnew.c \
+		ft_memmove.c \
 		ft_strcpy.c \
+		ft_strncat.c \
 
 
 OBJ =	add_link.o \
@@ -153,7 +157,11 @@ OBJ =	add_link.o \
 		ft_strsplit.o \
 		muravei_idi.o \
 		free.o \
+		ft_lstadd.o \
+		ft_lstnew.o \
+		ft_memmove.o \
 		ft_strcpy.o \
+		ft_strncat.o \
 
 all: $(NAME)
 

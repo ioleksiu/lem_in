@@ -12,6 +12,19 @@
 
 #include "lem_in.h"
 
+void			free_split(char **arr)
+{
+	int		i;
+
+	i = 0;
+	while (arr[i])
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
+}
+
 void			free_rooms(t_rooms *rooms)
 {
 	t_rooms		*tmp;
@@ -40,7 +53,7 @@ void			free_ways(t_ways *ways)
 
 void			free_lem_struct(t_lemin *lem)
 {
-	int 	i;
+	int			i;
 
 	i = 0;
 	while (i < lem->room_num)
@@ -56,7 +69,8 @@ void			free_lem_struct(t_lemin *lem)
 	free(lem->is_ant_finished);
 	free(lem);
 }
-void 			free_all(t_lemin *lem, t_rooms *rooms)
+
+void			free_all(t_lemin *lem, t_rooms *rooms)
 {
 	free_rooms(rooms);
 	free_ways(lem->ways);

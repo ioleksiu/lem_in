@@ -12,61 +12,85 @@
 
 #include "lem_in.h"
 
-static t_list	*ft_find_fd(t_list **head, int fd)
+static	t_list	*ft_correct_fd(t_list **head, size_t fd)
 {
-	t_list		*temp;
+	t_list		*node;
 
-	if ((temp = *head))
+	node = *head;
+	if (node)
 	{
-		while (temp)
+		while (node)
 		{
-			if (fd == (int)temp->content_size)
-				return (temp);
-			temp = temp->next;
+			if (fd == node->content_size)
+				return (node);
+			node = node->next;
 		}
 	}
-	temp = ft_lstnew("\0", 1);
-	temp->content_size = fd;
-	ft_lstadd(head, temp);
-	return (temp);
+	node = ft_lstnew("\0", 1);
+	node->content_size = fd;
+	ft_lstadd(head, node);
+	return (node);
 }
 
-char			*ft_join_rf(char *temp, char *buf, int len_rf)
+static	char	*ft_strndup(char *sorc, size_t n)
 {
-	char	*del_temp;
-	char	*str;
+	char		*dup;
 
-	del_temp = temp;
-	str = ft_strnew(ft_strlen(temp) + len_rf);
-	ft_strcpy(str, temp);
-	ft_strncpy(str + ft_strlen(str), buf, len_rf);
-	if (del_temp)
-		free(del_temp);
-	return (str);
+	if (!(dup = (char *)malloc(sizeof(char) * n + 1)))
+		return (NULL);
+	dup = ft_strncpy(dup, sorc, n);
+	dup[n] = '\0';
+	return (dup);
 }
 
-int				get_next_line(int const fd, char **line)
+static	char	*ft_strnjoin(char const *s1, char const *s2, size_t len)
 {
-	char			buf[BUFF_SIZE + 1];
-	char			*del_content;
-	static t_list	*head = NULL;
-	t_list			*item;
-	int				rf;
+	char		*s3;
 
-	if (fd < 0 || line == NULL || read(fd, buf, 0) < 0)
+	if (!s1 || !s2)
+		return (NULL);
+	if (!(s3 = ft_strnew(ft_strlen(s1) + len)))
+		return (NULL);
+	s3 = ft_strcpy(s3, s1);
+	s3 = ft_strncat(s3, s2, len);
+	return (s3);
+}
+
+static	char	*ft_add(char *content, char *buff, int result)
+{
+	char		*p;
+
+	p = content;
+	content = ft_strnjoin(content, buff, result);
+	free(p);
+	return (content);
+}
+
+int				get_next_line(const int fd, char **line)
+{
+	static	t_list	*new_line;
+	t_list			*head;
+	char			buff[BUFF_SIZE + 1];
+	int				result;
+	char			*s;
+
+	if (fd < 0 || read(fd, buff, 0) < 0 || !line)
 		return (-1);
-	item = ft_find_fd(&head, fd);
-	while (!ft_strchr(item->content, '\n') && (rf = read(fd, buf, BUFF_SIZE)))
-		item->content = ft_join_rf(item->content, buf, rf);
-	rf = 0;
-	while (((char *)item->content)[rf] && ((char *)item->content)[rf] != '\n')
-		rf++;
-	del_content = item->content;
-	*line = ft_strncpy(ft_strnew(rf), item->content, rf);
-	if (((char *)item->content)[rf] == '\n')
-		rf++;
-	item->content = ft_strdup(item->content + rf);
-	free(del_content);
-	return (rf ? 1 : 0);
+	head = new_line;
+	new_line = ft_correct_fd(&head, fd);
+	while (!ft_strchr(new_line->content, '\n') &&
+		(result = read(fd, buff, BUFF_SIZE)))
+		new_line->content = ft_add(new_line->content, buff, result);
+	result = 0;
+	while (((char *)new_line->content)[result] &&
+		((char *)new_line->content)[result] != '\n')
+		result++;
+	*line = ft_strndup(new_line->content, result);
+	if (((char *)new_line->content)[result] == '\n')
+		result++;
+	s = new_line->content;
+	new_line->content = ft_strdup(new_line->content + result);
+	free(s);
+	new_line = head;
+	return (result ? 1 : 0);
 }
-

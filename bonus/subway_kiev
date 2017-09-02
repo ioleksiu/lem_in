@@ -1,27 +1,6 @@
-60
-6 1 2
-##start
-1 2 2
-2 2 3
-3 3 2
-4 34 5
-##end
-5 4 5
-6-1
-1-2
-2-3
-3-4
-4-5
-5-6
-6-2
-1-5
-5-2
-5-3
-5-4
-hui
-
 1
 #BLUE LINE
+##end
 HeroivDnipra 1 1
 Minska 2 2
 Obolon 3 3
@@ -41,6 +20,7 @@ VystavkovyiTsentr 16 16
 Ipodrom 17 17
 Teremky 18 18
 #GREEN LINE
+##start
 Syrets 12 1
 Dorohozhychi 22 2
 lukianivska 32 3
@@ -58,7 +38,6 @@ Vyrlytsia 142 14
 Boryspilska 152 15
 ChervonyKhutir 162 16
 #RED LINE
-##start
 Akademmistechko 13 1
 Zhytomyrska 23 2
 Sviatoshyn 33 3
@@ -76,7 +55,6 @@ Hidropark 143 14
 livoberezhna 153 15
 Darnytsia 163 16
 Chernihivska 173 17
-##end
 lisova 183 18
 #LINKS RED
 #
@@ -141,5 +119,3 @@ Boryspilska-ChervonyKhutir
 #
 ZolotiVorota-Teatralna
 PalatsSportu-PloshchaLvaTolstoho
-hui
-

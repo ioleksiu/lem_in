@@ -15,8 +15,10 @@
 void		ants_number(t_lemin *lem)
 {
 	char	*s;
+	int	jope;
 
-	while (get_next_line(0, &s) && join_input(lem, s) && !ft_isdigit(s[0]))
+	jope = 0;
+	while ((jope = get_next_line(0, &s)) && jope != -1 && join_input(lem, s) && !ft_isdigit(s[0]))
 	{
 		if (!is_comment(s))
 		{
